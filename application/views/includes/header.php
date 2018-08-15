@@ -59,7 +59,7 @@
 
 <!-- CSS Header and Footer -->
 <link rel="stylesheet" href="<?php echo base_url();?>assets/css/header-default.css">
-<!-- <link rel="stylesheet" href="assets/css/footers/footer-v1.css"> -->
+<!-- <link rel="stylesheet" href="<?php echo base_url();?>assets/css/footers/footer-v1.css"> -->
 
 <!-- CSS Implementing Plugins -->
 
@@ -121,7 +121,7 @@
 					<span class="icon-bar"></span>
 				</button>
 				<a class="navbar-brand" href="<?php echo base_url();?>#body">
-						<img src="<?php echo base_url();?>assets/img/logo-dark3.png" alt="">
+						<img src="<?php echo base_url();?><?php echo base_url();?>assets/img/logo-dark3.png" alt="">
 				</a>
 			</div>
 

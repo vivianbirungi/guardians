@@ -11,19 +11,19 @@
                 <div class="carousel slide carousel-v1" id="myCarousel">
                     <div class="carousel-inner">
                         <div class="item active">
-                            <img alt="" src="<?php echo base_url();  ?>assets/img/main/img11.jpg">
+                            <img alt="" src="<?php echo base_url();?><?php echo base_url();  ?>assets/img/main/img11.jpg">
                             <div class="carousel-caption">
                                 <p>Facilisis odio, dapibus ac justo acilisis gestinas.</p>
                             </div>
                         </div>
                         <div class="item">
-                            <img alt="" src="<?php echo base_url();  ?>assets/img/main/img12.jpg">
+                            <img alt="" src="<?php echo base_url();?><?php echo base_url();  ?>assets/img/main/img12.jpg">
                             <div class="carousel-caption">
                                 <p>Cras justo odio, dapibus ac facilisis into egestas.</p>
                             </div>
                             </div>
                         <div class="item">
-                            <img alt="" src="<?php echo base_url();  ?>assets/img/main/img13.jpg">
+                            <img alt="" src="<?php echo base_url();?><?php echo base_url();  ?>assets/img/main/img13.jpg">
                             <div class="carousel-caption">
                                 <p>Justo cras odio apibus ac afilisis lingestas de.</p>
                             </div>
@@ -75,116 +75,23 @@
             </div>
 
             <div class="owl-recent-works-v1">
-                <div class="item">
-                    <a href="#">
-                        <em class="overflow-hidden">
-                            <img class="img-responsive" src="<?php echo base_url();  ?>assets/img/main/img1.jpg" alt="">
-                        </em>
-                        <span>
-                            <strong>Happy New Year</strong>
-                            <i>Anim pariatur cliche reprehenderit</i>
-                        </span>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="#">
-                        <em class="overflow-hidden">
-                            <img class="img-responsive" src="<?php echo base_url();  ?>assets/img/main/img2.jpg" alt="">
-                        </em>
-                        <span>
-                            <strong>Award Winning Agency</strong>
-                            <i>Responsive Bootstrap Template</i>
-                        </span>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="#">
-                        <em class="overflow-hidden">
-                            <img class="img-responsive" src="<?php echo base_url();  ?>assets/img/main/img3.jpg" alt="">
-                        </em>
-                        <span>
-                            <strong>Wolf Moon Officia</strong>
-                            <i>Pariatur prehe cliche reprehrit</i>
-                        </span>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="#">
-                        <em class="overflow-hidden">
-                            <img class="img-responsive" src="<?php echo base_url();  ?>assets/img/main/img4.jpg" alt="">
-                        </em>
-                        <span>
-                            <strong>Food Truck Quinoa Nesciunt</strong>
-                            <i>Craft labore wes anderson cred</i>
-                        </span>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="#">
-                        <em class="overflow-hidden">
-                            <img class="img-responsive" src="<?php echo base_url();  ?>assets/img/main/img5.jpg" alt="">
-                        </em>
-                        <span>
-                            <strong>Happy New Year</strong>
-                            <i>Anim pariatur cliche reprehenderit</i>
-                        </span>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="#">
-                        <em class="overflow-hidden">
-                            <img class="img-responsive" src="<?php echo base_url();  ?>assets/img/main/img1.jpg" alt="">
-                        </em>
-                        <span>
-                            <strong>Happy New Year</strong>
-                            <i>Anim pariatur cliche reprehenderit</i>
-                        </span>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="#">
-                        <em class="overflow-hidden">
-                            <img class="img-responsive" src="<?php echo base_url();  ?>assets/img/main/img2.jpg" alt="">
-                        </em>
-                        <span>
-                            <strong>Award Winning Agency</strong>
-                            <i>Responsive Bootstrap Template</i>
-                        </span>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="#">
-                        <em class="overflow-hidden">
-                            <img class="img-responsive" src="<?php echo base_url();  ?>assets/img/main/img3.jpg" alt="">
-                        </em>
-                        <span>
-                            <strong>Wolf Moon Officia</strong>
-                            <i>Pariatur prehe cliche reprehrit</i>
-                        </span>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="#">
-                        <em class="overflow-hidden">
-                            <img class="img-responsive" src="<?php echo base_url();  ?>assets/img/main/img4.jpg" alt="">
-                        </em>
-                        <span>
-                            <strong>Food Truck Quinoa Nesciunt</strong>
-                            <i>Craft labore wes anderson cred</i>
-                        </span>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="#">
-                        <em class="overflow-hidden">
-                            <img class="img-responsive" src="<?php echo base_url();  ?>assets/img/main/img5.jpg" alt="">
-                        </em>
-                        <span>
-                            <strong>Happy New Year</strong>
-                            <i>Anim pariatur cliche reprehenderit</i>
-                        </span>
-                    </a>
-                </div>
+                <?php
+                    if( count( $portifolios) > 0 ) {
+                         foreach( $portifolios as $portifolio){
+                            echo '<div class="item">
+                                <a href="#">
+                                <em class="overflow-hidden">
+                                <img class="img-responsive" src="'.base_url().'assets/img/main/'.$portifolio->portifolio_image.'" alt="">
+                                </em>
+                                <span>
+                                <strong>'.$portifolio->portifolio_name.'</strong>
+                                <i>'.$portifolio->portifolio_description.'</i>
+                                </span>
+                                </a>
+                            </div>';
+                         }
+                    }
+                ?>
             </div>
         </div>
         <!-- End Recent Works -->
