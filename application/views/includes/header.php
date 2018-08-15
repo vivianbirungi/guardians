@@ -102,6 +102,15 @@
 
 <!-- CSS Customization -->
 <link rel="stylesheet" href="<?php echo base_url();?>assets/css/custom.css">
+
+<style>
+
+  .chess-about-us-inner p{
+    color:#dadada
+  }
+
+</style>
+
 </head>
 
 <!--
@@ -145,7 +154,7 @@
 							<a href="<?php echo base_url();?>#Skills"><span data-hover="Skills">Skills</span></a>
 						</li>
 						<li class="page-scroll">
-							<a href="<?php echo base_url();?>#Team"><span data-hover="Team">Team</span></a>
+							<a href="<?php echo base_url();?>#Team"><span data-hover="Team">Blog</span></a>
 						</li>
 						<li class="page-scroll">
 							<a href="<?php echo base_url();?>#Testimonials"><span data-hover="Testimonials">Testimonials</span></a>

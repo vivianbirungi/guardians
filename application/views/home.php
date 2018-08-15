@@ -65,6 +65,22 @@
 
 	<!-- CSS Customization -->
 	<link rel="stylesheet" href="<?php echo base_url();?>asset1/css/custom.css">
+	<style>
+
+  .chess-about-us-inner p{
+    color:#dadada
+  }
+  .g-display-td p{
+	color:#dadada 
+  }
+  .mob p{
+	color:#dadada
+  }
+  .mob1 p{
+	color:#aaaaaa
+  }
+
+</style>
 </head>
 
 <!--
@@ -434,34 +450,34 @@
 					ante. Nunc ullamcorper, justo a iaculis elementum, enim orci viverra eros, fringilla porttitor lorem eros vel odio.
 				</div>
 			</div>
-			<div class="row">
+			<div class="row mob1">
 				<div class="col-md-3 col-sm-6 g-mb-30 wow fadeInUp" data-wow-offset="20" data-wow-duration="1.5s">
 					<i class="icon-custom icon-3lg rounded-x icon-color-u icon-border-v3 icon-line icon-magic-wand g-mb-25">
 						<span></span>
 					</i>
 					<h4 class="g-mb-15">Web Design</h4>
-					Quisque rhoncus euismod pulvinar. Nulla non arcu at lectus. Vestibulum fringilla velit rhoncus euismod rhoncus turpis
+					<p>Quisque rhoncus euismod pulvinar. Nulla non arcu at lectus. Vestibulum fringilla velit rhoncus euismod rhoncus turpis</p>
 				</div>
 				<div class="col-md-3 col-sm-6 g-mb-30 wow fadeInUp" data-wow-offset="20" data-wow-duration="1.75s">
 					<i class="icon-custom icon-3lg rounded-x icon-color-u icon-border-v3 icon-line icon-diamond g-mb-25">
 						<span></span>
 					</i>
 					<h4 class="g-mb-15">Graphic Design</h4>
-					Quisque rhoncus euismod pulvinar. Nulla non arcu at lectus. Vestibulum fringilla velit rhoncus euismod rhoncus turpis
+					<p>Quisque rhoncus euismod pulvinar. Nulla non arcu at lectus. Vestibulum fringilla velit rhoncus euismod rhoncus turpis</p>
 				</div>
 				<div class="col-md-3 col-sm-6 g-mb-30 wow fadeInUp" data-wow-offset="20" data-wow-duration="2s">
 					<i class="icon-custom icon-3lg rounded-x icon-color-u icon-border-v3 icon-line icon-calculator g-mb-25">
 						<span></span>
 					</i>
 					<h4 class="g-mb-15">UI/UX</h4>
-					Quisque rhoncus euismod pulvinar. Nulla non arcu at lectus. Vestibulum fringilla velit rhoncus euismod rhoncus turpis
+					<p>Quisque rhoncus euismod pulvinar. Nulla non arcu at lectus. Vestibulum fringilla velit rhoncus euismod rhoncus turpis</p>
 				</div>
 				<div class="col-md-3 col-sm-6 g-mb-30 wow fadeInUp" data-wow-offset="20" data-wow-duration="2.25s">
 					<i class="icon-custom icon-3lg rounded-x icon-color-u icon-border-v3 icon-line icon-badge g-mb-25">
 						<span></span>
 					</i>
 					<h4 class="g-mb-15">Branding</h4>
-					Quisque rhoncus euismod pulvinar. Nulla non arcu at lectus. Vestibulum fringilla velit rhoncus euismod rhoncus turpis
+					<p>Quisque rhoncus euismod pulvinar. Nulla non arcu at lectus. Vestibulum fringilla velit rhoncus euismod rhoncus turpis</p>
 				</div>
 			</div>
 		</div>
@@ -548,7 +564,7 @@
 								<p class="g-mb-30">
 									<img src="<?php echo base_url();?>assets/img-temp/process/2.jpg" alt="" class="img-responsive">
 								</p>
-								<div class="row">
+								<div class="row mob">
 									<div class="col-md-4 col-sm-6 g-mb-30">
 										<div class="g-display-table g-mb-15">
 											<div class="g-display-td g-text-middle">
