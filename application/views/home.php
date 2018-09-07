@@ -135,6 +135,11 @@
 								</a>
 							</li>
 							<li class="page-scroll">
+								<a href="#Portifolio">
+									<span data-hover="Portifolio">Portifolio</span>
+								</a>
+							</li>
+							<li class="page-scroll">
 								<a href="#Team">
 									<span data-hover="Team">Team</span>
 								</a>
@@ -389,16 +394,17 @@
 			<div class="why-we-item why-we-item--light equal-height-column">
 				<div class="why-we-item-inner">
 					<h2 class="h2">
-						<em class="block-name">Why we</em> We as magicians</h2>
-					<p>Donec ut diam risus. Nunc cursus turpis ac erat mollis maximus. Donec erat urna, tincidunt at leo non, blandit finibus
-						ante. Nunc venenatis risus in finibus dapibus. Ut ac massa sodales, mattis enim id, efficitur tortor. Nullam faucibus
-						iaculis laoreet. Phasellus ac ipsum odio.</p>
-					<p>Nulla cursus orci sed ipsum scelerisque volutpat. Integer quis dapibus leo, maximus ultrices dui. Mauris facilisis,
-						ex sed scelerisque bibendum, tellus leo pharetra augue.</p>
-					<p>Mauris aliquet, magna nec gravida interdum, magna nibh fringilla nulla, eget egestas sapien orci eget tellus. Pellentesque
-						vulputate posuere libero a varius. Duis feugiat.</p>
-					<p>
-						<button class="btn-u btn-u-lg btn-u-red btn-u-upper" type="submit">Get In Touch</button>
+						<em class="block-name"></em>Our Objectives</h2>
+					<p>a) To carry on business as a General Commercial Company</p>
+					<p>b) To engage in the business of  running/operating a consultancy firm</p>
+					<p>c) To foster development in the broad areas of fisheries, aquaculture and agriculture .</p>
+					<p> d) To foster sustainable environmental conservation using several interventions such as: Research for development, 
+						Writing policy briefs, Educational awareness campaigns, 
+						Fostering strategic partnerships at national, regional and international levels, 
+						Engaging other professionals and businesses in multidisciplinary and interdisciplinary approach,
+						Production and processing of goods and services using endowments of nature such as flora and fauna, Conservation, Preservation and advocacy of our natural and human history – encompassing for example culture and tradition, museum collections, botanical gardens and arboretum.</p>
+					<p>e) To do all such other things as may be deemed incidental or conducive to the attainment of the above objects or any of them. </p>
+						<!--<button class="btn-u btn-u-lg btn-u-red btn-u-upper" type="submit">Get In Touch</button> -->{% endcomment %}
 					</p>
 				</div>
 			</div>
@@ -484,7 +490,8 @@
 		<!-- End What We Do Block -->
 
 		<!--=== Content Part ===-->
-		<div class="container content">
+		<div class="container content" id="Portifolio">
+		
 			<!-- Portfolio Sorting Blocks -->
 			<div class="sorting-block">
 				<div class="content-xs">
@@ -754,7 +761,7 @@
 			<div class="container our-team-v4-members">
 				<div class="row">
 					<!-- Col -->
-					<div class="col-md-3 col-sm-6 col-xs-6 col-2xs-12">
+					<div class="col-md-4 col-sm-6 col-xs-6 col-2xs-12">
 						<div class="our-team-v4-member g-mb-50">
 							<div class="our-team-v4-member-wrapper g-mb-40">
 								<img src="<?php echo base_url();?>assets/img-temp/team/2.jpg" alt="">
@@ -786,14 +793,15 @@
 									</ul>
 								</div>
 							</div>
-							<em class="our-team-v4__role">Photographer</em>
-							<strong class="our-team-v4__name">Ralf Smith</strong>
+							<em class="our-team-v4__role">Company Director</em>
+							<strong class="our-team-v4__name">Margaret Masette</strong>
 							<span class="our-team-v4__position">Head Photographer</span>
+							<a style="color:dodgerblue" data-target="#person1" data-toggle="modal">View full profile</a>
 						</div>
 					</div>
 					<!-- End Col -->
 					<!-- Col -->
-					<div class="col-md-3 col-sm-6 col-xs-6 col-2xs-12">
+					<div class="col-md-4 col-sm-6 col-xs-6 col-2xs-12">
 						<div class="our-team-v4-member g-mb-50">
 							<div class="our-team-v4-member-wrapper g-mb-40">
 								<img src="<?php echo base_url();?>assets/img-temp/team/5.jpg" alt="">
@@ -825,14 +833,15 @@
 									</ul>
 								</div>
 							</div>
-							<em class="our-team-v4__role">Designer</em>
-							<strong class="our-team-v4__name">Monica Gaudy</strong>
-							<span class="our-team-v4__position">Art Director</span>
+							<em class="our-team-v4__role">Company Director</em>
+							<strong class="our-team-v4__name">Kubiriza Kawooya Godfrey</strong>
+							<span class="our-team-v4__position">Fisheries Department</span>
+							<a style="color:dodgerblue" data-target="#person2" data-toggle="modal">View full profile</a>
 						</div>
 					</div>
 					<!-- End Col -->
 					<!-- Col -->
-					<div class="col-md-3 col-sm-6 col-xs-6 col-2xs-12">
+					<div class="col-md-4 col-sm-6 col-xs-6 col-2xs-12">
 						<div class="our-team-v4-member g-mb-50">
 							<div class="our-team-v4-member-wrapper g-mb-40">
 								<img src="<?php echo base_url();?>assets/img-temp/team/1.jpg" alt="">
@@ -864,50 +873,15 @@
 									</ul>
 								</div>
 							</div>
-							<em class="our-team-v4__role">Co-Founder</em>
-							<strong class="our-team-v4__name">Julia Exon</strong>
-							<span class="our-team-v4__position">Creative Director</span>
-						</div>
+							<em class="our-team-v4__role">Company Director</em>
+							<strong class="our-team-v4__name">Robinson Odong</strong>
+							<span class="our-team-v4__position">Zoology, Entomology and Fisheries Sciences</span>
+							<a style="color:dodgerblue" data-target="#person3" data-toggle="modal">View full profile</a>
+						</div> 
 					</div>
 					<!-- End Col -->
 					<!-- Col -->
-					<div class="col-md-3 col-sm-6 col-xs-6 col-2xs-12">
-						<div class="our-team-v4-member g-mb-50">
-							<div class="our-team-v4-member-wrapper g-mb-40">
-								<img src="<?php echo base_url();?>assets/img-temp/team/4.jpg" alt="">
-								<div>
-									<em>
-										changing your mind and changing world
-									</em>
-									<ul class="g-social-icons-v2">
-										<li>
-											<a href="#">
-												<i class="fa fa-twitter"></i>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<i class="fa fa-pinterest"></i>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<i class="fa fa-facebook"></i>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<i class="fa fa-linkedin"></i>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<em class="our-team-v4__role">Co-Founder</em>
-							<strong class="our-team-v4__name">Jacob Assange</strong>
-							<span class="our-team-v4__position">Marketing Director</span>
-						</div>
-					</div>
+					
 					<!-- End Col -->
 				</div>
 			</div>
@@ -915,7 +889,7 @@
 		<!-- End Our Team -->
 
 		<!-- Join Our Team -->
-		<div class="g-section-bg-gray text-center g-pt-60 g-pb-70 g-heading-v7">
+		<!-- <div class="g-section-bg-gray text-center g-pt-60 g-pb-70 g-heading-v7">
 			<div class="container">
 				<h3>Want To Join Our Team?</h3>
 				<div class="row g-mb-40">
@@ -927,8 +901,8 @@
 				</div>
 				<button type="submit" class="btn-u btn-u-lg btn-u-red btn-u-upper">Send Your Resume</button>
 			</div>
-		</div>
-		<!-- END Join Our Team -->
+		</div> 
+		END Join Our Team -->
 
 		<!-- Testimonials & Clients -->
 		<div class="testimonials-clients clearfix" id="Testimonials">
@@ -1021,14 +995,16 @@
 					<i class="icon-line icon-map icon-v4 g-mb-30"></i>
 					<div>
 						<em>Address</em>
-						<strong>In sed lectus tincidunt</strong>
+						<strong>5 Buku Close<br>
+							P. O. Box 168<br>
+							Entebbe</strong>
 					</div>
 				</div>
 				<div class="col-sm-3 contacts-v4-info equal-height-column">
 					<i class="icon-line icon-screen-smartphone icon-v4 g-mb-30"></i>
 					<div>
 						<em>Phone Number</em>
-						<strong>+48 555 2566 112</strong>
+						<strong>0772394289/0704316396</strong>
 					</div>
 				</div>
 				<div class="col-sm-3 contacts-v4-info contacts-v4-info--dark equal-height-column">
@@ -1036,7 +1012,7 @@
 					<div>
 						<em>Email</em>
 						<strong>
-							<a href="mailto:info@htmlstream.com">info@htmlstream.com</a>
+							<a href="mailto:info@guardiansofnature.com">info@guardiansofnature.com</a>
 						</strong>
 					</div>
 				</div>
@@ -1057,7 +1033,7 @@
 				<h3>Have A Questions?</h3>
 				<div class="row g-mb-40">
 					<div class="col-sm-8 col-sm-offset-2">
-						Sed eget aliquet nisl. Proin laoreet accumsan nisl non vestibulum.
+						Draft it here and we shall respond to you as soon as possible
 					</div>
 				</div>
 				<form action="#" class="sky-form" method="post" id="sky-form3">
@@ -1179,6 +1155,70 @@
 		<!-- End Footer 9 -->
 
 	</main>
+	<div class='modal fade' role="dialog" id="person1">
+    <div  class="modal-dialog">
+    <div  class="modal-content">
+    <div  class="modal-header">Margaret Masette Company Director</div>
+    <div  class="modal-body">
+	<p>Margaret Masette is an employee of National Agricultural Research Organization (NARO),
+	 as a Senior Research Officer working with Food Bioscience and Agri-business (FBA), one of the six programs under National
+	  Agricultural Research Laboratories. She started working with Ministry of Agriculture, Animal industry and Fisheries 
+	  (MAAIF) in 1980s and transferred her services to NARO at its inception in 1994 as a Research Officer. FBA is mandated to generate information and offer support services to fast-track agri-food systems and enterprises in Uganda. As a senior researcher, she supervises research activities for a dozen scientists and creates linkages with food processing industrialists and development partners. She also offers lectures and supervises special projects for both undergraduate and post-graduate students in post-harvest fisheries, marketing and transportation courses in the Department of Zoology, Entomology and Fisheries Sciences,
+	 Makerere University.</p>
+<p>She is also implementing FAO funded project that is designed to combat malnutrition among vulnerable communities through 
+incorporation of micro-nutrient rich fish powders into staple carbohydrate foods. 
+Part of this study, included a market survey of fish-based feed manufacturers as a start point for fish powder production
+ intended for human consumption. In the recent past, she has successfully implemented several projects that included; (1) development of novel products from small pelagic fishes of Ugandan lakes (2) nutritional security of freshwater fish products in the East, Central and Southern African region, (3) assessment of processing technologies for small-sized pelagic fishes from Lake Albert (Brycinus nurse - ragoogi and Neobola bredoi - muziri) and (4) increasing supply of mukene (Rastrineobola argentea) for human consumption. All the projects undertaken link research outputs with end-users who inevitably include consumers, traders and entrepreneurs or industrialists. She has authored many disseminated materials; book chapters, peer-reviewed papers, processing manuals/guides, brochures and leaflets. She is also widely travelled; locally, regionally and internationally.
+ Without doubt, she is a hardworking, reliable and competent person who espouses Christian values.</p></div>
+ <div class="modal-footer">Guardians of Nature</div>
+    </div>
+</div>
+
+
+</div>
+<div class='modal fade' role="dialog" id="person2">
+    <div  class="modal-dialog">
+    <div  class="modal-content">
+    <div  class="modal-header">Godfrey Kawooya Kubiriza Director</div>
+    <div  class="modal-body">
+	<p>Godfrey Kawooya Kubiriza, obtained his PhD from The United Nations University Fisheries Training Programme in Iceland
+	 (UNU-FTP). His PhD thesis research was on “The effects of dietary lipid oxidation on farmed fish”. 
+	 He is a Lecturer in aquaculture in the Department of Zoology, Entomology and Fisheries Sciences, Makerere University. 
+	 He is also a Field Attachment Coordinator, linking students to different fish farms in Uganda. 
+	 He studied sustainable aquaculture management at Holar University College.
+	  He has vast experience on effective experimental design and statistical analyses of aquaculture growth studies and on 
+	  the development and preservation of aquafeeds in Africa and elsewhere. 
+	  He is the technical advisor for the fish farmers in the WALIMI Fish cooperative society (WAFICOS) umbrella, based in 
+	  Wandegeya, Uganda. Godfrey is the contact person for programs run by his Department with UNU-FTP and the Icelandic 
+	  International Development Agency (ICEIDA) consulate. In the past, he worked with USAID as a training coordinator
+	   for “fish project” in the country. Godfrey has also served as a Lecturer in the Natural Resources College of Malawi,
+	    Lilongwe. Similarly, he was a station manager for growth trials for developing a suitable formulated feeds,
+		 for use in Cage culture of Tilapia on L. Malawi, and as a Service provider with the National Agricultural Advisory 
+		 Services to implement Fish farming in Mukono-District.</p>
+	
+	</div>
+	<div class="modal-footer">Guardians of Nature</div>
+    </div>
+</div>
+
+
+</div>
+<div class='modal fade' role="dialog" id="person3">
+    <div  class="modal-dialog">
+    <div  class="modal-content">
+    <div  class="modal-header"> Dr. Odong Director</div>
+    <div  class="modal-body"><p>Dr. Odong is a Lecturer in the Department of Zoology, Entomology and Fisheries Sciences,
+	 Makerere University. He has vast experience in Hydrobiology, a subject which he undertook during his MSc studies and that 
+	 he teaches. Dr. Odong holds a PhD in Environmental Biotechnology of Makerere University, Uganda, obtained in January 2015.
+	  He has vast research experience in Fisheries and Aquaculture. Together with Dr. Kawooya, he is a Coordinator of Fisheries and Aquaculture Field Attachment Programme in the Department of Zoology, Entomology and Fisheries Sciences. He has a lot of experience working with Aquaculture farms, e.g., on the two projects:  (a) “Integration of floating islands and the culture of bivalves to remove pollutants from cage fish farming sites in Lake Victoria and provide high quality protein source for aquafeeds” at Source of the Nile Fish Farm, Buikwe. This project is funded by the Swedish Government through Sida; and (b)  “Harnessing the high protein and nutrient sequestration potential of bivalves for value addition for enhanced profitability of smallholder aquaculture in Uganda”,
+	 sponsored by The Regional Universities Forum for Capacity Building in Agriculture (RUFORUM).</p></div>
+    <div class="modal-footer">Guardians of Nature</div>
+    </div>
+</div>
+
+
+</div>
+
 
 	<!-- JS Global Compulsory -->
 	<script src="<?php echo base_url();?>asset1/plugins/jquery/jquery.min.js"></script>

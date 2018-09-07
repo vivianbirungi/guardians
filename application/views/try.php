@@ -98,42 +98,47 @@
 					<div class="menu-container">
 						<ul class="nav navbar-nav">
 							<li class="page-scroll">
-								<a href="#About">
+								<a href="<?php echo base_url();?>welcome/index#About">
 									<span data-hover="About">About</span>
 								</a>
 							</li>
 							<li class="page-scroll">
-								<a href="#WhyWe">
+								<a href="<?php echo base_url();?>welcome/index#WhyWe">
 									<span data-hover="Why We">Why We</span>
 								</a>
 							</li>
 							<li class="page-scroll">
-								<a href="#Services">
+								<a href="<?php echo base_url();?>welcome/index#Services">
 									<span data-hover="Services">Services</span>
 								</a>
 							</li>
 							<li class="page-scroll">
-								<a href="#WorkProcess">
+								<a href="<?php echo base_url();?>welcome/index#WorkProcess">
 									<span data-hover="Work Process">Work Process</span>
 								</a>
 							</li>
 							<li class="page-scroll">
-								<a href="#Skills">
+								<a href="<?php echo base_url();?>welcome/index#Skills">
 									<span data-hover="Skills">Skills</span>
 								</a>
 							</li>
 							<li class="page-scroll">
-								<a href="#Team">
+								<a href="<?php echo base_url();?>welcome/index#Portifolio">
+									<span data-hover="Why We">Why We</span>
+								</a>
+							</li>
+							<li class="page-scroll">
+								<a href="<?php echo base_url();?>welcome/index#Team">
 									<span data-hover="Team">Team</span>
 								</a>
 							</li>
 							<li class="page-scroll">
-								<a href="#Testimonials">
+								<a href="<?php echo base_url();?>welcome/index#Testimonials">
 									<span data-hover="Testimonials">Testimonials</span>
 								</a>
 							</li>
 							<li class="page-scroll">
-								<a href="#Contact">
+								<a href="<?php echo base_url();?>/welcome/index#Contact">
 									<span data-hover="Contact">Contact</span>
 								</a>
 							</li>

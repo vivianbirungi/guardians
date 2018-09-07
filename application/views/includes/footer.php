@@ -29,6 +29,7 @@
 
 </main>
 
+
 <!-- JS Global Compulsory -->
 <script src="<?php echo base_url();?><?php echo base_url();?>Agency/assets/plugins/jquery/jquery.min.js"></script>
 <script src="<?php echo base_url();?><?php echo base_url();?>Agency/assets/plugins/jquery/jquery-migrate.min.js"></script>
@@ -129,6 +130,8 @@ $(function() {
 <!-- JS Global Compulsory -->
 
 <!-- JS Implementing Plugins -->
+
+
 <script type="text/javascript" src="<?php echo base_url();?><?php echo base_url();  ?>assets/plugins/back-to-top.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?><?php echo base_url();  ?>assets/plugins/smoothScroll.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?><?php echo base_url();  ?>assets/plugins/owl-carousel2/owl.carousel.js"></script>
