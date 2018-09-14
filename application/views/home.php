@@ -1,42 +1,23 @@
 <!DOCTYPE html>
-<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
-<!--[if !IE]><!-->
 <html lang="en-us">
-<!--<![endif]-->
-
-<!-- Cloned by RabinsXP.com-->
-
 <head>
-	<title>Agency | Unify - Rabins XP Responsive Website Template</title>
-
-	<!-- Meta -->
+	<title>Guardians of Nature</title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="author" content="">
-
-	<!-- Favicon -->
 	<link rel="shortcut icon" href="../favicon.ico">
-
-	<!-- Web Fonts -->
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&amp;subset=cyrillic,latin">
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900">
-
-	<!-- CSS Global Compulsory -->
 	<link rel="stylesheet" href="<?php echo base_url();?>asset1/plugins/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="<?php echo base_url();?>asset1/css/app.css">
 	<link rel="stylesheet" href="<?php echo base_url();?>asset1/css/blocks.css">
 	<link rel="stylesheet" href="<?php echo base_url();?>asset1/css/plugins.css">
 	<link rel="stylesheet" href="<?php echo base_url();?>asset1/css/style.css">
-
-	<!-- CSS Header and Footer -->
 	<link rel="stylesheet" href="<?php echo base_url();?>asset1/css/headers/header-default.css">
 	<link rel="stylesheet" href="<?php echo base_url();?>asset1/css/footers/footer-v1.css">
 	<link rel="stylesheet" href="<?php echo base_url();?>assets/css/portfolio-v2.css">
-
-
-	<!-- CSS Implementing Plugins -->
 	<link rel="stylesheet" href="<?php echo base_url();?>asset1/plugins/animate.css">
 	<link rel="stylesheet" href="<?php echo base_url();?>asset1/plugins/line-icons/line-icons.css">
 	<link rel="stylesheet" href="<?php echo base_url();?>asset1/plugins/font-awesome/css/font-awesome.min.css">
@@ -79,6 +60,15 @@
   .mob1 p{
 	color:#aaaaaa
   }
+  .filter{
+	  padding:10px;
+	  text-transform:capitalize !important;
+	  background:#eee  !important;
+	  border-radius:0px  !important;
+	  padding-left:20px  !important;
+	  padding-right:20px  !important;
+	  font-style: normal !important;
+  }
 
 </style>
 </head>
@@ -114,11 +104,7 @@
 									<span data-hover="About">About</span>
 								</a>
 							</li>
-							<li class="page-scroll">
-								<a href="#WhyWe">
-									<span data-hover="Why We">Why We</span>
-								</a>
-							</li>
+						
 							<li class="page-scroll">
 								<a href="#Services">
 									<span data-hover="Services">Services</span>
@@ -390,7 +376,7 @@
 		<!-- End About Us Block -->
 
 		<!-- Why We Block -->
-		<div class="why-we equal-height-columns g-heading-v7 g-mb-80 clearfix" id="WhyWe">
+		<div class="why-we equal-height-columns g-heading-v7 g-mb-80 clearfix" id="Services">
 			<div class="why-we-item why-we-item--light equal-height-column">
 				<div class="why-we-item-inner">
 					<h2 class="h2">
@@ -404,19 +390,22 @@
 						Engaging other professionals and businesses in multidisciplinary and interdisciplinary approach,
 						Production and processing of goods and services using endowments of nature such as flora and fauna, Conservation, Preservation and advocacy of our natural and human history – encompassing for example culture and tradition, museum collections, botanical gardens and arboretum.</p>
 					<p>e) To do all such other things as may be deemed incidental or conducive to the attainment of the above objects or any of them. </p>
-						<!--<button class="btn-u btn-u-lg btn-u-red btn-u-upper" type="submit">Get In Touch</button> -->{% endcomment %}
+						
 					</p>
 				</div>
 			</div>
 
 			<div class="why-we-item why-we-item--dark equal-height-column">
 				<div class="why-we-item-inner">
+				    <div class="g-display-table wow fadeInRight" data-wow-offset="20" data-wow-duration="1.75s">
+						
+					</div>
 					<div class="g-display-table wow fadeInRight" data-wow-offset="20" data-wow-duration="1.75s">
 						<div class="g-display-td g-text-middle hidden-xs">
 							<i class="icon-custom icon-2lg rounded-x icon-color-u icon-border-v2 icon-line icon-magnet"></i>
 						</div>
 						<div class="g-display-td g-text-top">
-							<h4>Branding and identity</h4>
+							<h4>Proposal writting</h4>
 							<p>Sed in laoreet purus. Nunc sagittis suscipit ultrices. Proin suscipit facilisis ultrices. Phasellus arcu risus, semper
 								quis elementum eget.</p>
 						</div>
@@ -426,7 +415,7 @@
 							<i class="icon-custom icon-2lg rounded-x icon-color-u icon-border-v2 icon-line icon-magic-wand"></i>
 						</div>
 						<div class="g-display-td g-text-top">
-							<h4>UI/UX and graphic design</h4>
+							<h4>Educational awareness</h4>
 							<p>Mauris aliquet, magna nec gravida interdum, magna nibh fringilla nulla, eget egestas sapien orci eget tellusa varius.</p>
 						</div>
 					</div>
@@ -435,7 +424,7 @@
 							<i class="icon-custom icon-2lg rounded-x icon-color-u icon-border-v2 icon-line icon-calculator"></i>
 						</div>
 						<div class="g-display-td g-text-top">
-							<h4>Web and software development</h4>
+							<h4>consultancy</h4>
 							<p>Aliquam dignissim, leo sit amet pulvinar dapibus, neque sapien bibendum massa, a efficitur massa mauris a augue. Suspendisse
 								faucibus.
 							</p>
@@ -446,52 +435,15 @@
 		</div>
 		<!-- End Why We Block -->
 
-		<!-- What We Do Block -->
-		<div class="container text-center g-heading-v7 g-mb-65" id="Services">
-			<h2 class="h2">
-				<em class="block-name">Services</em> What we do</h2>
-			<div class="row g-mb-70">
-				<div class="col-sm-8 col-sm-offset-2">
-					Sed feugiat porttitor nunc, non dignissim ipsum vestibulum in. Donec in blandit dolor. Vivamus a fringilla lorem, vel faucibus
-					ante. Nunc ullamcorper, justo a iaculis elementum, enim orci viverra eros, fringilla porttitor lorem eros vel odio.
-				</div>
-			</div>
-			<div class="row mob1">
-				<div class="col-md-3 col-sm-6 g-mb-30 wow fadeInUp" data-wow-offset="20" data-wow-duration="1.5s">
-					<i class="icon-custom icon-3lg rounded-x icon-color-u icon-border-v3 icon-line icon-magic-wand g-mb-25">
-						<span></span>
-					</i>
-					<h4 class="g-mb-15">Web Design</h4>
-					<p>Quisque rhoncus euismod pulvinar. Nulla non arcu at lectus. Vestibulum fringilla velit rhoncus euismod rhoncus turpis</p>
-				</div>
-				<div class="col-md-3 col-sm-6 g-mb-30 wow fadeInUp" data-wow-offset="20" data-wow-duration="1.75s">
-					<i class="icon-custom icon-3lg rounded-x icon-color-u icon-border-v3 icon-line icon-diamond g-mb-25">
-						<span></span>
-					</i>
-					<h4 class="g-mb-15">Graphic Design</h4>
-					<p>Quisque rhoncus euismod pulvinar. Nulla non arcu at lectus. Vestibulum fringilla velit rhoncus euismod rhoncus turpis</p>
-				</div>
-				<div class="col-md-3 col-sm-6 g-mb-30 wow fadeInUp" data-wow-offset="20" data-wow-duration="2s">
-					<i class="icon-custom icon-3lg rounded-x icon-color-u icon-border-v3 icon-line icon-calculator g-mb-25">
-						<span></span>
-					</i>
-					<h4 class="g-mb-15">UI/UX</h4>
-					<p>Quisque rhoncus euismod pulvinar. Nulla non arcu at lectus. Vestibulum fringilla velit rhoncus euismod rhoncus turpis</p>
-				</div>
-				<div class="col-md-3 col-sm-6 g-mb-30 wow fadeInUp" data-wow-offset="20" data-wow-duration="2.25s">
-					<i class="icon-custom icon-3lg rounded-x icon-color-u icon-border-v3 icon-line icon-badge g-mb-25">
-						<span></span>
-					</i>
-					<h4 class="g-mb-15">Branding</h4>
-					<p>Quisque rhoncus euismod pulvinar. Nulla non arcu at lectus. Vestibulum fringilla velit rhoncus euismod rhoncus turpis</p>
-				</div>
-			</div>
-		</div>
-		<!-- End What We Do Block -->
+	
 
 		<!--=== Content Part ===-->
-		<div class="container content" id="Portifolio">
-		
+		<div class="container content text-center g-heading-v7 g-mb-80" id="Portifolio">
+  
+  			<div style="margin-top:70px; text-align:center">
+			  <h2 class="h2">
+				<em class="block-name">Portifolio</em> Our Portifolio</h2>
+			</div>
 			<!-- Portfolio Sorting Blocks -->
 			<div class="sorting-block">
 				<div class="content-xs">
@@ -513,13 +465,12 @@
 						if( count( $categories ) > 0 ) {
 							foreach($portifolios as $portifolio){
 								echo '<li class="col-md-3 col-sm-6 col-xs-12 mix '.$portifolio->category.'" data-cat="1">
-								<a href="'.base_url().'welcome/tryPage/'.$portifolio->portifolio_id.'">
-								<img class="img-responsive" src="'.base_url().'assets/img/main/'.$portifolio->portifolio_image.'" alt="">
-								<span class="sorting-cover">
-								<span>'.$portifolio->portifolio_name.'</span>
-								<p>'.$portifolio->portifolio_description.'</p>
-								</span>
-								</a>
+									<a href="'.base_url().'welcome/tryPage/'.$portifolio->portifolio_id.'">
+										<img class="img-responsive" src="'.base_url().'assets/img/main/'.$portifolio->portifolio_image.'" alt="">
+										<span class="sorting-cover">
+											<span>'.$portifolio->portifolio_name.'</span>
+										</span>
+									</a>
 								</li>';
 							}
 						}
@@ -532,9 +483,6 @@
 		</div>
 		<!--/container-->
 		<!--=== End Content Part ===-->
-
-
-
 
 		<!-- How We Work -->
 		<div class="v-tab-content text-center g-heading-v7 g-mb-80" id="WorkProcess">
@@ -664,6 +612,7 @@
 
 		<!-- Our Best Side -->
 		<div class="container text-center g-heading-v7 g-mb-80" id="Skills">
+		    <div style="height:60px;"></div>
 			<h2 class="h2">
 				<em class="block-name">Skills</em> Our Best Side</h2>
 			<div class="row g-mb-70">
@@ -888,22 +837,6 @@
 		</div>
 		<!-- End Our Team -->
 
-		<!-- Join Our Team -->
-		<!-- <div class="g-section-bg-gray text-center g-pt-60 g-pb-70 g-heading-v7">
-			<div class="container">
-				<h3>Want To Join Our Team?</h3>
-				<div class="row g-mb-40">
-					<div class="col-sm-8 col-sm-offset-2">
-						Sed eget aliquet nisl. Proin laoreet accumsan nisl non vestibulum. Donec molestie, lorem nec sollicitudin elementum, mi justo
-						posuere lectus, vitae ullamcorper orci mi vel massa. Pellentesque habitant morbi tristique senectus et netus et malesuada
-						fames ac turpis egestas.
-					</div>
-				</div>
-				<button type="submit" class="btn-u btn-u-lg btn-u-red btn-u-upper">Send Your Resume</button>
-			</div>
-		</div> 
-		END Join Our Team -->
-
 		<!-- Testimonials & Clients -->
 		<div class="testimonials-clients clearfix" id="Testimonials">
 			<div class="tc-testimonials">
@@ -1053,7 +986,7 @@
 						<div class="row">
 							<div class="col-sm-6 g-mb-25">
 								<label class="select">
-									<select>
+									<select name="department">
 										<option value="0">Department</option>
 										<option value="1">Department 1</option>
 										<option value="2">Department 2</option>
@@ -1155,54 +1088,51 @@
 		<!-- End Footer 9 -->
 
 	</main>
-	<div class='modal fade' role="dialog" id="person1">
-    <div  class="modal-dialog">
-    <div  class="modal-content">
-    <div  class="modal-header">Margaret Masette Company Director</div>
-    <div  class="modal-body">
-	<p>Margaret Masette is an employee of National Agricultural Research Organization (NARO),
-	 as a Senior Research Officer working with Food Bioscience and Agri-business (FBA), one of the six programs under National
-	  Agricultural Research Laboratories. She started working with Ministry of Agriculture, Animal industry and Fisheries 
-	  (MAAIF) in 1980s and transferred her services to NARO at its inception in 1994 as a Research Officer. FBA is mandated to generate information and offer support services to fast-track agri-food systems and enterprises in Uganda. As a senior researcher, she supervises research activities for a dozen scientists and creates linkages with food processing industrialists and development partners. She also offers lectures and supervises special projects for both undergraduate and post-graduate students in post-harvest fisheries, marketing and transportation courses in the Department of Zoology, Entomology and Fisheries Sciences,
-	 Makerere University.</p>
-<p>She is also implementing FAO funded project that is designed to combat malnutrition among vulnerable communities through 
-incorporation of micro-nutrient rich fish powders into staple carbohydrate foods. 
-Part of this study, included a market survey of fish-based feed manufacturers as a start point for fish powder production
- intended for human consumption. In the recent past, she has successfully implemented several projects that included; (1) development of novel products from small pelagic fishes of Ugandan lakes (2) nutritional security of freshwater fish products in the East, Central and Southern African region, (3) assessment of processing technologies for small-sized pelagic fishes from Lake Albert (Brycinus nurse - ragoogi and Neobola bredoi - muziri) and (4) increasing supply of mukene (Rastrineobola argentea) for human consumption. All the projects undertaken link research outputs with end-users who inevitably include consumers, traders and entrepreneurs or industrialists. She has authored many disseminated materials; book chapters, peer-reviewed papers, processing manuals/guides, brochures and leaflets. She is also widely travelled; locally, regionally and internationally.
- Without doubt, she is a hardworking, reliable and competent person who espouses Christian values.</p></div>
- <div class="modal-footer">Guardians of Nature</div>
-    </div>
+		<div class='modal fade' role="dialog" id="person1">
+		<div  class="modal-dialog">
+		<div  class="modal-content">
+		<div  class="modal-header">Margaret Masette Company Director</div>
+		<div  class="modal-body">
+		<p>Margaret Masette is an employee of National Agricultural Research Organization (NARO),
+		as a Senior Research Officer working with Food Bioscience and Agri-business (FBA), one of the six programs under National
+		Agricultural Research Laboratories. She started working with Ministry of Agriculture, Animal industry and Fisheries 
+		(MAAIF) in 1980s and transferred her services to NARO at its inception in 1994 as a Research Officer. FBA is mandated to generate information and offer support services to fast-track agri-food systems and enterprises in Uganda. As a senior researcher, she supervises research activities for a dozen scientists and creates linkages with food processing industrialists and development partners. She also offers lectures and supervises special projects for both undergraduate and post-graduate students in post-harvest fisheries, marketing and transportation courses in the Department of Zoology, Entomology and Fisheries Sciences,
+		Makerere University.</p>
+		<p>She is also implementing FAO funded project that is designed to combat malnutrition among vulnerable communities through 
+		incorporation of micro-nutrient rich fish powders into staple carbohydrate foods. 
+		Part of this study, included a market survey of fish-based feed manufacturers as a start point for fish powder production
+		intended for human consumption. In the recent past, she has successfully implemented several projects that included; (1) development of novel products from small pelagic fishes of Ugandan lakes (2) nutritional security of freshwater fish products in the East, Central and Southern African region, (3) assessment of processing technologies for small-sized pelagic fishes from Lake Albert (Brycinus nurse - ragoogi and Neobola bredoi - muziri) and (4) increasing supply of mukene (Rastrineobola argentea) for human consumption. All the projects undertaken link research outputs with end-users who inevitably include consumers, traders and entrepreneurs or industrialists. She has authored many disseminated materials; book chapters, peer-reviewed papers, processing manuals/guides, brochures and leaflets. She is also widely travelled; locally, regionally and internationally.
+		Without doubt, she is a hardworking, reliable and competent person who espouses Christian values.</p></div>
+		<div class="modal-footer">Guardians of Nature</div>
+		</div>
+		</div>
 </div>
 
+		<div class='modal fade' role="dialog" id="person2">
+		<div  class="modal-dialog">
+		<div  class="modal-content">
+		<div  class="modal-header">Godfrey Kawooya Kubiriza Director</div>
+		<div  class="modal-body">
+		<p>Godfrey Kawooya Kubiriza, obtained his PhD from The United Nations University Fisheries Training Programme in Iceland
+		(UNU-FTP). His PhD thesis research was on “The effects of dietary lipid oxidation on farmed fish”. 
+		He is a Lecturer in aquaculture in the Department of Zoology, Entomology and Fisheries Sciences, Makerere University. 
+		He is also a Field Attachment Coordinator, linking students to different fish farms in Uganda. 
+		He studied sustainable aquaculture management at Holar University College.
+		He has vast experience on effective experimental design and statistical analyses of aquaculture growth studies and on 
+		the development and preservation of aquafeeds in Africa and elsewhere. 
+		He is the technical advisor for the fish farmers in the WALIMI Fish cooperative society (WAFICOS) umbrella, based in 
+		Wandegeya, Uganda. Godfrey is the contact person for programs run by his Department with UNU-FTP and the Icelandic 
+		International Development Agency (ICEIDA) consulate. In the past, he worked with USAID as a training coordinator
+		for “fish project” in the country. Godfrey has also served as a Lecturer in the Natural Resources College of Malawi,
+		Lilongwe. Similarly, he was a station manager for growth trials for developing a suitable formulated feeds,
+		for use in Cage culture of Tilapia on L. Malawi, and as a Service provider with the National Agricultural Advisory 
+		Services to implement Fish farming in Mukono-District.</p>
 
-</div>
-<div class='modal fade' role="dialog" id="person2">
-    <div  class="modal-dialog">
-    <div  class="modal-content">
-    <div  class="modal-header">Godfrey Kawooya Kubiriza Director</div>
-    <div  class="modal-body">
-	<p>Godfrey Kawooya Kubiriza, obtained his PhD from The United Nations University Fisheries Training Programme in Iceland
-	 (UNU-FTP). His PhD thesis research was on “The effects of dietary lipid oxidation on farmed fish”. 
-	 He is a Lecturer in aquaculture in the Department of Zoology, Entomology and Fisheries Sciences, Makerere University. 
-	 He is also a Field Attachment Coordinator, linking students to different fish farms in Uganda. 
-	 He studied sustainable aquaculture management at Holar University College.
-	  He has vast experience on effective experimental design and statistical analyses of aquaculture growth studies and on 
-	  the development and preservation of aquafeeds in Africa and elsewhere. 
-	  He is the technical advisor for the fish farmers in the WALIMI Fish cooperative society (WAFICOS) umbrella, based in 
-	  Wandegeya, Uganda. Godfrey is the contact person for programs run by his Department with UNU-FTP and the Icelandic 
-	  International Development Agency (ICEIDA) consulate. In the past, he worked with USAID as a training coordinator
-	   for “fish project” in the country. Godfrey has also served as a Lecturer in the Natural Resources College of Malawi,
-	    Lilongwe. Similarly, he was a station manager for growth trials for developing a suitable formulated feeds,
-		 for use in Cage culture of Tilapia on L. Malawi, and as a Service provider with the National Agricultural Advisory 
-		 Services to implement Fish farming in Mukono-District.</p>
-	
-	</div>
-	<div class="modal-footer">Guardians of Nature</div>
-    </div>
-</div>
-
-
-</div>
+		</div>
+		<div class="modal-footer">Guardians of Nature</div>
+		</div>
+		</div>
+		</div>
 <div class='modal fade' role="dialog" id="person3">
     <div  class="modal-dialog">
     <div  class="modal-content">
@@ -1282,17 +1212,5 @@ Part of this study, included a market survey of fish-based feed manufacturers as
 			PortfolioPage.init();
 		});
 	</script>
-
-	<!-- JS Page Level -->
-	<!-- <script type="text/javascript" src="<?php echo base_url();?>assets/js/app.js"></script>
-
-<script type="text/javascript" src="<?php echo base_url();?>assets/js/pages/page_portfolio.js"></script> -->
-
-	<!--[if lt IE 10]>
-  <script src="<?php echo base_url();?>asset1/plugins/sky-forms-pro/skyforms/js/jquery.placeholder.min.js"></script>
-<![endif]-->
 </body>
-
-<!-- Cloned by RabinsXP.com-->
-
 </html>
