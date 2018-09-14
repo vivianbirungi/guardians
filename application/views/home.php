@@ -406,7 +406,7 @@
 						</div>
 						<div class="g-display-td g-text-top">
 							<h4>Proposal writting</h4>
-							<p>proposal writing service provides the writing and strategic skills needed for must-win opportunities. We provide compliant copy, compelling writing, risk identification, and on-time delivery.</p>
+							<p>Our proposal writing service provides the writing and strategic skills needed for must-win opportunities. We provide compliant copy, compelling writing, risk identification, and on-time delivery.</p>
 						</div>
 					</div>
 					<div class="g-display-table wow fadeInRight" data-wow-offset="20" data-wow-duration="1.75s">
