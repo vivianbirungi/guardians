@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="author" content="">
-	<link rel="shortcut icon" href="../favicon.ico">
+	<link rel="shortcut icon" href="<?php echo base_url();?>assets/img/logo-dark3.png">
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&amp;subset=cyrillic,latin">
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900">
 	<link rel="stylesheet" href="<?php echo base_url();?>asset1/plugins/bootstrap/css/bootstrap.min.css">
@@ -91,7 +91,7 @@
 						<span class="icon-bar"></span>
 					</button>
 					<a class="navbar-brand" href="#body">
-						<img src="<?php echo base_url();?>assets/img/logo-dark3.png" alt="">
+						<img src="<?php echo base_url();?>assets/img/logo-dark3.png" alt="" style="height:40px; width:40px;">
 					</a>
 				</div>
 

@@ -1,24 +1,15 @@
 
 <!DOCTYPE html>
-<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
-<!--[if !IE]><!-->
 <html lang="en-us">
-<!--<![endif]-->
-
-<!-- Cloned by RabinsXP.com-->
 
 <head>
 	<title>Agency | Unify - Rabins XP Responsive Website Template</title>
-
-	<!-- Meta -->
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="author" content="">
-
-	<!-- Favicon -->
-	<link rel="shortcut icon" href="../favicon.ico">
+	<link rel="shortcut icon" href="<?php echo base_url();?>assets/img/logo-dark3.png">
 
 	<!-- Web Fonts -->
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&amp;subset=cyrillic,latin">
@@ -89,7 +80,7 @@
 						<span class="icon-bar"></span>
 					</button>
 					<a class="navbar-brand" href="#body">
-						<img src="<?php echo base_url();?>assets/img/logo-dark3.png" alt="">
+						<img src="<?php echo base_url();?>assets/img/logo-dark3.png" alt=""  style="height:40px; width:40px;">
 					</a>
 				</div>
 
