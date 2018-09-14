@@ -406,8 +406,7 @@
 						</div>
 						<div class="g-display-td g-text-top">
 							<h4>Proposal writting</h4>
-							<p>Sed in laoreet purus. Nunc sagittis suscipit ultrices. Proin suscipit facilisis ultrices. Phasellus arcu risus, semper
-								quis elementum eget.</p>
+							<p>proposal writing service provides the writing and strategic skills needed for must-win opportunities. We provide compliant copy, compelling writing, risk identification, and on-time delivery.</p>
 						</div>
 					</div>
 					<div class="g-display-table wow fadeInRight" data-wow-offset="20" data-wow-duration="1.75s">
@@ -416,7 +415,7 @@
 						</div>
 						<div class="g-display-td g-text-top">
 							<h4>Educational awareness</h4>
-							<p>Mauris aliquet, magna nec gravida interdum, magna nibh fringilla nulla, eget egestas sapien orci eget tellusa varius.</p>
+							<p>We can offer a huge gamut of Educational Awareness Services to our clients. We make society aware of the concerns of the people and promote better understanding of benifits of being educated</p>
 						</div>
 					</div>
 					<div class="g-display-table wow fadeInRight" data-wow-offset="20" data-wow-duration="1.75s">
