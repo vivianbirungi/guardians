@@ -140,6 +140,9 @@
 									<span data-hover="Contact">Contact</span>
 								</a>
 							</li>
+							<li class="page-scroll">
+						<a href="">Blog</a>
+					</li>
 						</ul>
 					</div>
 				</div>
@@ -462,8 +465,7 @@
 					<em class="block-name">Work Process</em> How We Work</h2>
 				<div class="row g-mb-70">
 					<div class="col-sm-8 col-sm-offset-2">
-						Praesent eu nibh malesuada, condimentum nibh hendrerit, viverra sem. Nulla porttitor eget ante ullamcorper convallis. Integer
-						dictum lorem arcu, eget tempus nulla accumsan id.
+						Our main three services i.e. Proposal writing, consultancy and education awareness follow a defined process to give a fine output.
 					</div>
 				</div>
 
@@ -472,13 +474,13 @@
 						<!-- Nav tabs -->
 						<ul class="nav nav-tabs nav-stacked g-mb-30" role="tablist">
 							<li role="presentation" class="active">
-								<a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">User Interfase</a>
+								<a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">Proposal Writing</a>
 							</li>
 							<li role="presentation">
-								<a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">Identity And Branding</a>
+								<a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">Consultancy</a>
 							</li>
 							<li role="presentation">
-								<a href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab">Web Design</a>
+								<a href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab">Education Awareness</a>
 							</li>
 						</ul>
 					</div>
@@ -588,8 +590,7 @@
 				<em class="block-name">Skills</em> Our Best Side</h2>
 			<div class="row g-mb-70">
 				<div class="col-sm-8 col-sm-offset-2">
-					Integer accumsan maximus leo, et consectetur metus vestibulum in. Vestibulum viverra justo odio. Donec eu nulla leo. Vivamus
-					risus lacus, viverra eu maximus non, tincidunt sodales massa.
+					
 				</div>
 			</div>
 
@@ -598,68 +599,27 @@
 				<div class="inner-pchart col-md-3 col-sm-6 g-mb-30--sm">
 					<div class="circle" id="circle-1"></div>
 					<h4 class="g-mb-15">Happty Clients</h4>
-					<p>Integer accumsan maximus leo, et consectetur metus vestibulum in. Vestibulum viverra justo odio maximus efficitur</p>
+					<p>Our clients are our priority , the big percentage is for them.</p>
 				</div>
 				<div class="inner-pchart col-md-3 col-sm-6 g-mb-30--sm">
 					<div class="circle" id="circle-2"></div>
-					<h4 class="g-mb-15">Completed Projects</h4>
-					<p>Quisque vestibulum sem eget nibh commodo, non elementum nibh pulvinar. Duis mattis venenatis tortor iaculis ultricies</p>
+					<h4 class="g-mb-15">Consultancy</h4>
+					<p>The clients we have given this service testify to the effort and their deliverables show</p>
 				</div>
 				<div class="inner-pchart col-md-3 col-sm-6 g-mb-30--sm">
 					<div class="circle" id="circle-3"></div>
 					<h4 class="g-mb-15">Our Team</h4>
-					<p>Nullam in diam arcu. Etiam nisl justo, tempor scelerisque sagittis vel, bibendum vestibulum metus. Donec eget nunc neque</p>
+					<p>our team has skills in achieving targets set for both our clients and the company at large</p>
 				</div>
 				<div class="inner-pchart col-md-3 col-sm-6">
 					<div class="circle" id="circle-4"></div>
-					<h4 class="g-mb-15">Countries</h4>
-					<p>Rhoncus euismod pulvinar. Nulla non arcu at lectus. Vestibulum fringilla velit rhoncus euismod rhoncus turpis</p>
+					<h4 class="g-mb-15">COMPLETED PROJECTS</h4>
+					<p>our projects have so far raised this percentage for our company and we are proud of the effort and skills offered</p>
 				</div>
 			</div>
 			<!-- End Pie Charts v3 -->
 
-			<div class="row text-left">
-				<div class="col-sm-6 g-mb-30--sm">
-					<!-- Progress Bar -->
-					<div class="progress-box">
-						<h5>Wed Development</h5>
-						<div class="progress g-mb-45">
-							<div class="progress-bar" role="progressbar" data-width="85"></div>
-						</div>
-
-						<h5>CSS3 And HTML5</h5>
-						<div class="progress g-mb-45">
-							<div class="progress-bar" role="progressbar" data-width="70"></div>
-						</div>
-
-						<h5>Social Media</h5>
-						<div class="progress g-mb-45">
-							<div class="progress-bar" role="progressbar" data-width="90"></div>
-						</div>
-					</div>
-					<!-- End Progress Bar -->
-				</div>
-				<div class="col-sm-6">
-					<!-- Progress Bar -->
-					<div class="progress-box">
-						<h5>App Development</h5>
-						<div class="progress g-mb-45">
-							<div class="progress-bar" role="progressbar" data-width="75"></div>
-						</div>
-
-						<h5>Branding</h5>
-						<div class="progress g-mb-45">
-							<div class="progress-bar" role="progressbar" data-width="95"></div>
-						</div>
-
-						<h5>Wordpress</h5>
-						<div class="progress g-mb-45">
-							<div class="progress-bar" role="progressbar" data-width="70"></div>
-						</div>
-					</div>
-					<!-- End Progress Bar -->
-				</div>
-			</div>
+			
 		</div>
 		<!-- End Our Best Side -->
 
@@ -671,8 +631,7 @@
 						<em class="block-name">Our Team</em> Work With Professionals</h2>
 					<div class="row g-mb-30">
 						<div class="col-sm-8 col-sm-offset-2">
-							Praesent eu nibh malesuada, condimentum nibh hendrerit, viverra sem. Nulla porttitor eget ante ullamcorper convallis. Integer
-							dictum lorem arcu, eget tempus nulla accumsan id.
+							Guardians of Nature has trained and dedicated team ready to serve our clients with complete dedication to their work.
 						</div>
 					</div>
 				</div>
@@ -1052,6 +1011,9 @@
 					</li>
 					<li class="page-scroll">
 						<a href="#Contact">Contact</a>
+					</li>
+					<li class="page-scroll">
+						<a href="">Blog</a>
 					</li>
 				</ul>
 			</div>
