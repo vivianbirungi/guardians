@@ -158,7 +158,7 @@
 						<!-- SLIDE  -->
 						<li data-index="rs-309" data-transition="slideoverhorizontal" data-slotamount="default" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut"
 						 data-masterspeed="1000" data-thumb="<?php echo base_url();?>asset1/plugins/revolution-slider/assets/images/bigbold_3-100x50.jpg" data-rotate="0"
-						 data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off" data-title="Unify Agency"
+						 data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off" data-title="Guardians of Nature"
 						 data-description="">
 							<!-- MAIN IMAGE -->
 							<img src="<?php echo base_url();?>asset1/plugins/revolution-slider/assets/images/bigbold_3.jpg" alt="" data-bgposition="center center" data-bgfit="cover"
@@ -180,7 +180,7 @@
 							 data-height="none" data-whitespace="['nowrap','nowrap','nowrap','normal']" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
 							 data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];"
 							 data-mask_out="x:inherit;y:inherit;" data-start="500" data-splitin="none" data-splitout="none" data-basealign="slide"
-							 data-responsive_offset="off" style="z-index: 6; white-space: nowrap;">Unify Agency
+							 data-responsive_offset="off" style="z-index: 6; white-space: nowrap;">Guardians of Nature
 							</div>
 
 							<!-- LAYER NR. 3 -->
@@ -189,18 +189,11 @@
 							 data-fontsize="['15','15','15','13']" data-lineheight="['24','24','24','20']" data-width="['410','410','410','280']"
 							 data-height="['60','100','100','100']" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
 							 data-transform_out="y:50px;opacity:0;s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-start="650" data-splitin="none"
-							 data-splitout="none" data-basealign="slide" data-responsive_offset="off" data-responsive="off" style="z-index: 7; min-width: 410px; max-width: 410px; max-width: 60px; max-width: 60px; white-space: normal;">A Premium Revolution Slider Template for your Website Highlights &amp; Multi-Media Content.
+							 data-splitout="none" data-basealign="slide" data-responsive_offset="off" data-responsive="off" style="z-index: 7; min-width: 410px; max-width: 410px; max-width: 60px; max-width: 60px; white-space: normal;">We foster development in the broad areas of fisheries, aquaculture and agriculture
 							</div>
 
 							<!-- LAYER NR. 4 -->
-							<div class="tp-caption BigBold-Button rev-btn  rs-parallaxlevel-0" id="slide-309-layer-7" data-x="['left','left','left','left']"
-							 data-hoffset="['480','480','30','20']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['50','50','30','20']"
-							 data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
-							 data-style_hover="c:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);cursor:pointer;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
-							 data-transform_out="y:50px;opacity:0;s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-start="650" data-splitin="none"
-							 data-splitout="none" data-actions='[{"event":"click","action":"scrollbelow","offset":"px"}]' data-basealign="slide"
-							 data-responsive_offset="off" data-responsive="off" style="z-index: 8; white-space: nowrap;border-color:rgba(255, 255, 255, 0.25);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;">READ MORE
-							</div>
+							
 
 							<!-- LAYER NR. 5 -->
 							<div class="tp-caption BigBold-Button rev-btn  rs-parallaxlevel-0" id="slide-309-layer-12" data-x="['left','left','left','left']"
@@ -216,21 +209,18 @@
 						<!-- SLIDE  -->
 						<li data-index="rs-310" data-transition="slideoverhorizontal" data-slotamount="default" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut"
 						 data-masterspeed="1000" data-thumb="<?php echo base_url();?>asset1/plugins/revolution-slider/assets/images/typing_cover-100x50.jpg" data-rotate="0"
-						 data-saveperformance="off" data-title="HTML5 Video" data-description="">
+						 data-saveperformance="off" data-title="Great Consultancy" data-description="">
 							<!-- MAIN IMAGE -->
 							<img src="<?php echo base_url();?>asset1/plugins/revolution-slider/assets/images/typing_cover.jpg" alt="" data-bgposition="center center" data-bgfit="cover"
 							 data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
 							<!-- LAYERS -->
 
 							<!-- BACKGROUND VIDEO LAYER -->
-							<div class="rs-background-video-layer" data-forcerewind="on" data-volume="mute" data-videowidth="100%" data-videoheight="100%"
-							 data-videomp4="<?php echo base_url();?>asset1/plugins/revolution-slider/assets/videos/typing.mp4" data-videopreload="preload" data-videostartat="00:04"
-							 data-videoloop="loop" data-forceCover="1" data-aspectratio="16:9" data-autoplay="true" data-autoplayonlyfirsttime="false"
-							 data-nextslideatend="true"></div>
+							
 							<!-- LAYER NR. 1 -->
 							<div class="tp-caption tp-shape tp-shapewrapper   rs-parallaxlevel-0" id="slide-310-layer-11" data-x="['center','center','center','center']"
 							 data-hoffset="['0','0','0','0']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['0','0','0','0']" data-width="full"
-							 data-height="['400','400','400','550']" data-whitespace="nowrap" data-transform_idle="o:1;" data-style_hover="cursor:default;"
+							 data-height="['400','400','400','550']" data-whiFtespace="nowrap" data-transform_idle="o:1;" data-style_hover="cursor:default;"
 							 data-transform_in="opacity:0;s:1500;e:Power2.easeInOut;" data-transform_out="opacity:0;s:1000;s:1000;" data-start="0"
 							 data-basealign="slide" data-responsive_offset="off" data-responsive="off" style="z-index: 5;background-color:rgba(0, 0, 0, 0.50);border-color:rgba(0, 0, 0, 0);background:linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.45) 100%);">
 							</div>
@@ -242,7 +232,7 @@
 							 data-height="none" data-whitespace="['nowrap','nowrap','nowrap','normal']" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
 							 data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
 							 data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="500" data-splitin="none" data-splitout="none"
-							 data-basealign="slide" data-responsive_offset="off" style="z-index: 6; white-space: nowrap;">SO SMOOTH!
+							 data-basealign="slide" data-responsive_offset="off" style="z-index: 6; white-space: nowrap;">Great Consultancy
 							</div>
 
 							<!-- LAYER NR. 3 -->
@@ -251,18 +241,11 @@
 							 data-fontsize="['15','15','15','13']" data-lineheight="['24','24','24','20']" data-width="['410','410','410','280']"
 							 data-height="['60','100','100','100']" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
 							 data-transform_out="y:50px;opacity:0;s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-start="650" data-splitin="none"
-							 data-splitout="none" data-basealign="slide" data-responsive_offset="off" data-responsive="off" style="z-index: 7; min-width: 410px; max-width: 410px; max-width: 60px; max-width: 60px; white-space: normal;">You can Download this Premium Slider for Free if you Activate your Copy of Slider Revolution.
+							 data-splitout="none" data-basealign="slide" data-responsive_offset="off" data-responsive="off" style="z-index: 7; min-width: 410px; max-width: 410px; max-width: 60px; max-width: 60px; white-space: normal;">We provide the best consultancy services for your business
 							</div>
 
 							<!-- LAYER NR. 4 -->
-							<div class="tp-caption BigBold-Button rev-btn  rs-parallaxlevel-0" id="slide-310-layer-7" data-x="['left','left','left','left']"
-							 data-hoffset="['480','480','30','20']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['50','50','30','20']"
-							 data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
-							 data-style_hover="c:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);cursor:pointer;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
-							 data-transform_out="y:50px;opacity:0;s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-start="650" data-splitin="none"
-							 data-splitout="none" data-actions='[{"event":"click","action":"scrollbelow","offset":"px"}]' data-basealign="slide"
-							 data-responsive_offset="off" data-responsive="off" style="z-index: 8; white-space: nowrap;border-color:rgba(255, 255, 255, 0.25);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;">READ MORE
-							</div>
+						
 
 							<!-- LAYER NR. 5 -->
 							<div class="tp-caption BigBold-Button rev-btn  rs-parallaxlevel-0" id="slide-310-layer-12" data-x="['left','left','left','left']"
@@ -299,7 +282,7 @@
 							 data-height="none" data-whitespace="['nowrap','nowrap','nowrap','normal']" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
 							 data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];"
 							 data-mask_out="x:inherit;y:inherit;" data-start="500" data-splitin="none" data-splitout="none" data-basealign="slide"
-							 data-responsive_offset="off" style="z-index: 6; white-space: nowrap;">SCROLL DOWN
+							 data-responsive_offset="off" style="z-index: 6; white-space: nowrap;">Proposal Writing
 							</div>
 
 							<!-- LAYER NR. 3 -->
@@ -308,18 +291,11 @@
 							 data-fontsize="['15','15','15','13']" data-lineheight="['24','24','24','20']" data-width="['410','410','410','280']"
 							 data-height="['60','100','100','100']" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
 							 data-transform_out="y:50px;opacity:0;s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-start="650" data-splitin="none"
-							 data-splitout="none" data-basealign="slide" data-responsive_offset="off" data-responsive="off" style="z-index: 7; min-width: 410px; max-width: 410px; max-width: 60px; max-width: 60px; white-space: normal;">This Premium Revolution Slider Template Features an Exclusive Scroll Effect. Get it Now!
+							 data-splitout="none" data-basealign="slide" data-responsive_offset="off" data-responsive="off" style="z-index: 7; min-width: 410px; max-width: 410px; max-width: 60px; max-width: 60px; white-space: normal;">We write eye-catching proposals for our clients  for all kind of projects 
 							</div>
 
 							<!-- LAYER NR. 4 -->
-							<div class="tp-caption BigBold-Button rev-btn  rs-parallaxlevel-0" id="slide-311-layer-7" data-x="['left','left','left','left']"
-							 data-hoffset="['480','480','30','20']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['50','50','30','20']"
-							 data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
-							 data-style_hover="c:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);cursor:pointer;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
-							 data-transform_out="y:50px;opacity:0;s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-start="650" data-splitin="none"
-							 data-splitout="none" data-actions='[{"event":"click","action":"scrollbelow","offset":"px"}]' data-basealign="slide"
-							 data-responsive_offset="off" data-responsive="off" style="z-index: 8; white-space: nowrap;border-color:rgba(255, 255, 255, 0.25);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;">READ MORE
-							</div>
+							
 
 							<!-- LAYER NR. 5 -->
 							<div class="tp-caption BigBold-Button rev-btn  rs-parallaxlevel-0" id="slide-311-layer-12" data-x="['left','left','left','left']"
@@ -346,29 +322,25 @@
 			<div class="chess-about-us-item chess-about-us-item--1 equal-height-column">
 				<div class="chess-about-us-inner chess-about-us-inner--left">
 					<h3>We love our customers</h3>
-					<p>Nulla cursus orci sed ipsum scelerisque volutpat. Integer quis dapibus leo, maximus ultrices dui. Mauris facilisis,
-						ex sed scelerisque bibendum, tellus leo pharetra augue, sed iaculis felis neque quis magna.</p>
+					<p>our customers' needs come first ready and pleased to help out whenever necessary until you are satisified to the fullest. lets connect on our social media pages and the blog</p>
 				</div>
 			</div>
 			<div class="chess-about-us-item chess-about-us-item--2 chess-about-us-item--dark equal-height-column">
 				<div class="chess-about-us-inner chess-about-us-inner--right">
 					<h3>We are creative</h3>
-					<p>Nunc sed justo semper, gravida orci at, malesuada ipsum. Morbi at faucibus enim, ac pharetra purus. Phasellus id tellus
-						eu nisi porta maximus. Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+					<p>Creative production is often characterized by the divergent nature of human thought and action. we are characterised by fluency, elaboration, flexibility and originality</p>
 				</div>
 			</div>
 			<div class="chess-about-us-item chess-about-us-item--3 chess-about-us-item--dark equal-height-column">
 				<div class="chess-about-us-inner chess-about-us-inner--left">
 					<h3>We are pragmatic</h3>
-					<p>Aliquam dignissim, leo sit amet pulvinar dapibus, neque sapien bibendum massa, a efficitur massa mauris a augue. Suspendisse
-						faucibus facilisis porttitor. Suspendisse tristique arcu vel</p>
+					<p>whatever project we take on, proves the practicality in our company with solutions to the problems in the real world. </p>
 				</div>
 			</div>
 			<div class="chess-about-us-item chess-about-us-item--4 equal-height-column">
 				<div class="chess-about-us-inner chess-about-us-inner--right">
 					<h3>We are professional</h3>
-					<p>Mauris aliquet, magna nec gravida interdum, magna nibh fringilla nulla, eget egestas sapien orci eget tellus. Pellentesque
-						vulputate posuere libero a varius. Duis feugiat nisl id arcu posuere dapibus eu sed augue.</p>
+					<p>The experience we have, is reviled in the work done by all our team members. In this we have neccessary and the best qualifiaction to out put the best for you.</p>
 				</div>
 			</div>
 			<img src="<?php echo base_url();?>assets/img-temp/team2.jpg" alt="">
