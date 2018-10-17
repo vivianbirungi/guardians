@@ -110,6 +110,14 @@
 									<span data-hover="Services">Services</span>
 								</a>
 							</li>
+							
+							
+							
+							<li class="page-scroll">
+								<a href="#Portifolio">
+									<span data-hover="Portifolio">Portifolio</span>
+								</a>
+							</li>
 							<li class="page-scroll">
 								<a href="#WorkProcess">
 									<span data-hover="Work Process">Work Process</span>
@@ -118,11 +126,6 @@
 							<li class="page-scroll">
 								<a href="#Skills">
 									<span data-hover="Skills">Skills</span>
-								</a>
-							</li>
-							<li class="page-scroll">
-								<a href="#Portifolio">
-									<span data-hover="Portifolio">Portifolio</span>
 								</a>
 							</li>
 							<li class="page-scroll">
