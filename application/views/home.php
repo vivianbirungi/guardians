@@ -468,7 +468,7 @@
 					<em class="block-name">Work Process</em> How We Work</h2>
 				<div class="row g-mb-70">
 					<div class="col-sm-8 col-sm-offset-2">
-						Our main three services i.e. Proposal writing, consultancy and education awareness follow a defined process to give a fine output.
+						Our main three sectors i.e. Fisheries and aquaculture, Animal Husbandry and Forestry follow a defined process to give a fine output.
 					</div>
 				</div>
 
@@ -477,13 +477,13 @@
 						<!-- Nav tabs -->
 						<ul class="nav nav-tabs nav-stacked g-mb-30" role="tablist">
 							<li role="presentation" class="active">
-								<a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">Proposal Writing</a>
+								<a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">Fisheries and aquaculture</a>
 							</li>
 							<li role="presentation">
-								<a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">Consultancy</a>
+								<a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">Animal Husbandry</a>
 							</li>
 							<li role="presentation">
-								<a href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab">Education Awareness</a>
+								<a href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab">Forestry</a>
 							</li>
 						</ul>
 					</div>
