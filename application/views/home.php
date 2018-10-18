@@ -515,7 +515,7 @@
 												<i class="num-icon-v2">2</i>
 											</div>
 											<div class="g-display-td g-text-middle">
-												<h4>Wireframe</h4>
+												<h4>Pitching with Executive Leadership Teams</h4>
 											</div>
 										</div>
 
@@ -540,7 +540,7 @@
 
 							<div role="tabpanel" class="tab-pane fade" id="tab2">
 								<p class="g-mb-30">
-									<img src="<?php echo base_url();?>assets/img-temp/process/3.jpg" alt="" class="img-responsive">
+									<img src="<?php echo base_url();?>assets/img/main/goat1.jpg" alt="" class="img-responsive">
 								</p>
 								<div class="row">
 									<div class="col-sm-6 g-mb-30">
@@ -549,7 +549,7 @@
 												<i class="num-icon-v2">1</i>
 											</div>
 											<div class="g-display-td g-text-middle">
-												<h4>Discuss With Client</h4>
+												<h4>Creating Proposals</h4>
 											</div>
 										</div>
 
@@ -562,7 +562,7 @@
 												<i class="num-icon-v2">2</i>
 											</div>
 											<div class="g-display-td g-text-middle">
-												<h4>Wireframe</h4>
+												<h4>Closing the Deal</h4>
 											</div>
 										</div>
 
@@ -573,7 +573,7 @@
 							</div>
 							<div role="tabpanel" class="tab-pane fade" id="tab3">
 								<p class="g-mb-30">
-									<img src="<?php echo base_url();?>assets/img-temp/process/1.jpg" alt="" class="img-responsive">
+									<img src="<?php echo base_url();?>assets/img/main/green2.jpg" alt="" class="img-responsive">
 								</p>
 								<p>Sed feugiat porttitor nunc, non dignissim ipsum vestibulum in. Donec in blandit dolor. Vivamus a fringilla lorem,
 									vel faucibus ante. Nunc ullamcorper, justo a iaculis elementum, enim orci viverra eros, fringilla porttitor lorem
@@ -640,7 +640,7 @@
 				</div>
 			</div>
 
-			<div class="container our-team-v4-members">
+			<div class="container our-team-v4-members" >
 				<div class="row">
 					<!-- Col -->
 					<div class="col-md-4 col-sm-6 col-xs-6 col-2xs-12">
@@ -956,7 +956,7 @@
 		<!-- END Form -->
 
 		<!-- GMaps -->
-		<div class="GMap-stand-alone" id="map"></div>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1994.8815729496046!2d32.5273118!3d0.3013218!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177da34849e3dfef%3A0x88506bf5eba9ec99!2sPrime+Village+Mall!5e0!3m2!1snl!2sug!4v1539860264808" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 		<!-- END GMaps -->
 
 		<!-- Footer 9 -->
@@ -964,10 +964,10 @@
 			<div class="container">
 				<div class="page-scroll">
 					<a href="#body" class="footer-logo">
-						<img src="<?php echo base_url();?>assets/img/logo-light3.png" alt="Logo" class="g-mb-30">
+						<img src="<?php echo base_url();?>assets/img/logo-dark3.png" alt="Logo" class="g-mb-30">
 					</a>
 				</div>
-				<div class="g-mb-35">Integer accumsan maximus leo, et consectetur metus vestibulum in. Vestibulum viverra justo odio maximus efficitur</div>
+				<div class="g-mb-35"></div>
 				<ul class="g-social-icons-v2 g-mb-30">
 					<li>
 						<a href="#">

@@ -1231,17 +1231,17 @@ a.btn-u-xs {
 }
 
 .btn-u.btn-u-red {
-	 background: #e74c3c;
+	 background: #8EBA43;
 }
 .btn-u.btn-u-red:hover,
 .btn-u.btn-u-red:focus,
 .btn-u.btn-u-red:active,
 .btn-u.btn-u-red.active,
 .open .dropdown-toggle.btn-u.btn-u-red {
-	 background: #c0392b;
+	 background: #8EBA43;
 }
 .btn-u.btn-u-split-red.dropdown-toggle {
-	 border-left: solid 1px #c0392b;
+	 border-left: solid 1px #8EBA43;
 }
 
 .btn-u.btn-u-orange {
@@ -1460,14 +1460,14 @@ a.btn-u-xs {
 }
 
 .btn-u.btn-brd.btn-u-red {
-	border-color: #e74c3c;
+	border-color: #8EBA43;
 }
 .btn-u.btn-brd.btn-u-red:hover {
-	color: #c0392b;
-	border-color: #c0392b;
+	color: #8EBA43;
+	border-color: #8EBA43;
 }
 .btn-u.btn-brd.btn-u-red.btn-brd-hover:hover {
-	 background: #c0392b;
+	 background: #8EBA43;
 }
 
 .btn-u.btn-brd.btn-u-orange {
@@ -1659,7 +1659,7 @@ span.badge-blue,
 span.label-red,
 span.badge-red,
 .list-group-item.active>.badge {
-	background: #e74c3c;
+	background: #8EBA43;
 }
 
 span.label-green,
@@ -1989,8 +1989,8 @@ i.icon-color-blue {
 	 border: solid 1px #3498db;
 }
 i.icon-color-red {
-	 color: #e74c3c;
-	 border: solid 1px #e74c3c;
+	 color: #8EBA43;
+	 border: solid 1px #8EBA43;
 }
 i.icon-color-sea {
 	 color: #1abc9c;
@@ -2069,7 +2069,7 @@ i.icon-bg-blue {
 	 background: #3498db;
 }
 i.icon-bg-red {
-	 background: #e74c3c;
+	 background: #8EBA43;
 }
 i.icon-bg-sea {
 	 background: #1abc9c;
@@ -2362,7 +2362,7 @@ i.icon-bg-light-grey {
 	background: #3498db;
 }
 .service-block-red {
-	background: #e74c3c;
+	background: #8EBA43;
 }
 .service-block-sea {
 	background: #1abc9c;
@@ -2471,7 +2471,7 @@ i.icon-bg-light-grey {
 
 /*Red Funny Box*/
 .funny-boxes-red {
-	background: #e74c3c;
+	background: #8EBA43;
 }
 
 /*Dark Red Funny Box*/
@@ -2514,11 +2514,11 @@ i.icon-bg-light-grey {
 
 /*Red Top Bordered Funny Box**/
 .funny-boxes-top-red {
-	border-top: solid 2px #e74c3c;
+	border-top: solid 2px #8EBA43;
 }
 
 .funny-boxes-top-red:hover {
-	border-top-color: #c0392b;
+	border-top-color: #8EBA43;
 }
 
 /*Purple Top Bordered Funny Box**/
@@ -2615,7 +2615,7 @@ i.icon-bg-light-grey {
 	 background: #3498db;
 }
 .text-highlights-red {
-	 background: #e74c3c;
+	 background: #8EBA43;
 }
 .text-highlights-sea {
 	 background: #1abc9c;
@@ -2657,7 +2657,7 @@ i.icon-bg-light-grey {
 	 border-color: #3498db;
 }
 .text-border-red {
-	 border-color: #e74c3c;
+	 border-color: #8EBA43;
 }
 .text-border-yellow {
 	 border-color: #f1c40f;
@@ -3094,11 +3094,11 @@ blockquote.hero.hero-default small {
 
 /*Panel Red*/
 .panel-red {
-	 border-color: #e74c3c;
+	 border-color: #8EBA43;
 }
 
 .panel-red > .panel-heading {
-	 background: #e74c3c;
+	 background: #8EBA43;
 }
 
 /*Panel Green*/
@@ -3261,7 +3261,7 @@ blockquote.hero.hero-default small {
 }
 
 .progress-bar-red {
-	background: #e74c3c;
+	background: #8EBA43;
 }
 
 .progress-bar-purple {
@@ -3491,8 +3491,8 @@ img.image-md {
 
 .tags-v4 a:hover {
 	color: #fff;
-	background: #e74c3c;
-	border-color: #e74c3c;
+	background: #8EBA43;
+	border-color: #8EBA43;
 	text-decoration: none;
 	-webkit-transition: all 0.25s, -webkit-transform 0.25s;
 	transition: all 0.25s, transform 0.25s;
@@ -3715,7 +3715,7 @@ img.image-md {
 /*Text Colors
 ------------------------------------*/
 .color-sea { color: #1abc9c;}
-.color-red { color: #e74c3c;}
+.color-red { color: #8EBA43;}
 .color-aqua { color: #27d7e7;}
 .color-blue { color: #3498db;}
 .color-grey { color: #95a5a6;}
@@ -3763,7 +3763,7 @@ img.image-md {
 .bg-color-darker { background-color: #222 !important;}
 .bg-color-white { background-color: #fff !important;}
 .bg-color-sea { background-color: #1abc9c !important;}
-.bg-color-red { background-color: #e74c3c !important;}
+.bg-color-red { background-color: #8EBA43 !important;}
 .bg-color-aqua { background-color: #27d7e7 !important;}
 .bg-color-blue { background-color: #3498db !important;}
 .bg-color-grey { background-color: #95a5a6 !important;}

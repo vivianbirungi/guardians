@@ -17,7 +17,7 @@ html {
 }
 
 a {
-	color: #e74c3c;
+	color: #8EBA43;
 	text-decoration: none;
 }
 a,
@@ -30,17 +30,17 @@ a:focus {
 	text-decoration: none;
 }
 a:hover {
-	color: #e74c3c;
+	color: #8EBA43;
 	text-decoration: underline;
 }
 
 ::-moz-selection {
 	color: #fff;
-	background: #e74c3c;
+	background: #8EBA43;
 }
 ::selection {
 	color: #fff;
-	background: #e74c3c;
+	background: #8EBA43;
 }
 
 /* Global Styles START */
@@ -224,7 +224,7 @@ a:hover {
 	line-height: 35px;
 	display: block;
 	background: #fff;
-	color: #e74c3c;
+	color: #8EBA43;
 	transition: all 0.3s ease-in-out;
 }
 .g-social-icons-v2 a:hover {
@@ -232,7 +232,7 @@ a:hover {
 	color: #fff;
 }
 .g-social-icons-v2 a i {
-	color: #e74c3c;
+	color: #8EBA43;
 }
 .g-social-icons-v2 a:hover i {
 	color: #fff;
@@ -279,8 +279,8 @@ i.icon-3lg {
 	font-size: 40px;
 }
 i.icon-color-u {
-  border: 1px solid #e74c3c;
-  color: #e74c3c;
+  border: 1px solid #8EBA43;
+  color: #8EBA43;
 }
 i.icon-border-v2 {
 	border: 4px solid #504a51;
@@ -294,13 +294,13 @@ i.icon-v4 {
 	height: 40px;
 	line-height: 1;
 	font-size: 40px;
-	color: #e74c3c;
+	color: #8EBA43;
 	display: inline-block;
 }
 
 i.num-icon-v2 {
   border: 4px solid #504a51;
-  color: #e74c3c;
+  color: #8EBA43;
   display: inline-block;
   font-size: 14px;
   font-weight: bold;
@@ -342,7 +342,7 @@ i.icon-3lg.g-icon-hover-1 span {
 	bottom: -10px;
 }
 i.icon-border-v3.g-icon-hover-1 span {
-	background: #e74c3c;
+	background: #8EBA43;
 }
 
 .g-heading-v7 h2,
@@ -359,7 +359,7 @@ i.icon-border-v3.g-icon-hover-1 span {
 	font-size: 12px;
 	font-style: normal;
 	display: block;
-	color: #fe6466;
+	color: #8EBA43;
 	margin-bottom: 20px;
 }
 .g-heading-v7 .h2:after {
@@ -367,7 +367,7 @@ i.icon-border-v3.g-icon-hover-1 span {
 	display: inline-block;
 	width: 70px;
 	height: 10px;
-	background: #fe6466;
+	background: #8EBA43;
 	position: absolute;
 	left: 0;
 	bottom: 0;
@@ -525,7 +525,7 @@ i.icon-border-v3.g-icon-hover-1 span {
 	position: absolute;
 	top: 100%;
 	font-weight: bold;
-	color: #e74c3c;
+	color: #8EBA43;
 	content: attr(data-hover);
 	transform: translate3d(0, 0, 0);
 	transition: color .4s;
@@ -545,7 +545,7 @@ i.icon-border-v3.g-icon-hover-1 span {
 .one-page-header.top-nav-collapse .dropdown-menu > .active > a span[data-hover],
 .one-page-header.top-nav-collapse .dropdown-menu > .active > a:hover span[data-hover],
 .one-page-header.top-nav-collapse .dropdown-menu > .active > a:focus span[data-hover] {
-	color: #e74c3c;
+	color: #8EBA43;
 	transform: translate3d(0, 0, 0);
 }
 @media (max-width: 991px) {
@@ -557,7 +557,7 @@ i.icon-border-v3.g-icon-hover-1 span {
 	.one-page-header .navbar-nav > li > a:hover span[data-hover] {
 		transform: translate3d(0, 0, 0);
 		transition: color .3s;
-		color: #e74c3c;
+		color: #8EBA43;
 		font-weight: bold;
 	}
 }
@@ -778,7 +778,7 @@ i.icon-border-v3.g-icon-hover-1 span {
 }
 .one-page-header.navbar-default .navbar-toggle:hover .icon-bar,
 .one-page-header.top-nav-collapse .navbar-toggle:hover .icon-bar {
-	background: #e74c3c;
+	background: #8EBA43;
 }
 /* Header END */
 
@@ -813,19 +813,19 @@ i.icon-border-v3.g-icon-hover-1 span {
 	background: #383339;
 }
 .chess-about-us-item:hover {
-	background: #e74c3c;
+	background: #8EBA43;
 }
 .chess-about-us-item--1:hover {
-	background: #e74c3c url(../img-temp/about/1.jpg) no-repeat 50% 0 / cover;
+	background: #8EBA43 url(../img-temp/about/1.jpg) no-repeat 50% 0 / cover;
 }
 .chess-about-us-item--2:hover {
-	background: #e74c3c url(../img-temp/about/2.jpg) no-repeat 50% 0 / cover;
+	background: #8EBA43 url(../img-temp/about/2.jpg) no-repeat 50% 0 / cover;
 }
 .chess-about-us-item--3:hover {
-	background: #e74c3c url(../img-temp/about/3.jpg) no-repeat 50% 0 / cover;
+	background: #8EBA43 url(../img-temp/about/3.jpg) no-repeat 50% 0 / cover;
 }
 .chess-about-us-item--4:hover {
-	background: #e74c3c url(../img-temp/about/4.jpg) no-repeat 50% 0 / cover;
+	background: #8EBA43 url(../img-temp/about/4.jpg) no-repeat 50% 0 / cover;
 }
 .chess-about-us-item:hover:after {
 	content: "";
@@ -834,7 +834,7 @@ i.icon-border-v3.g-icon-hover-1 span {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background: rgba(231,76,60,.9);
+	background: rgba(0,176,10,.7);
 }
 .chess-about-us-inner {
 	float: left;
@@ -937,7 +937,7 @@ i.icon-border-v3.g-icon-hover-1 span {
 	margin-right: 30px;
 }
 .g-display-table:hover i {
-	border-color: #e74c3c;
+	border-color: #8EBA43;
 }
 .why-we-item--dark h4 {
 	color: #fff;
@@ -961,7 +961,7 @@ i.icon-border-v3.g-icon-hover-1 span {
 
 /* Charts BEGIN */
 .pie-progress-charts .circle {
-  color: #383339;
+ 
   font-weight: 600;
   font-size: 30px;
 }
@@ -989,8 +989,8 @@ i.icon-border-v3.g-icon-hover-1 span {
 	top: 0;
 	margin-top: -16px;
 	color: #fff;
-	background: #e74c3c;
-	font-size: ;
+	background: #8EBA43;
+	
 	width: 42px;
 	height: 42px;
 	font-size: 11px;
@@ -1080,7 +1080,7 @@ i.icon-border-v3.g-icon-hover-1 span {
 .v-tab-content .nav-tabs > li.active > a,
 .v-tab-content .nav-tabs > li.active > a:focus,
 .v-tab-content .nav-tabs > li.active > a:hover {
-  background: #e74c3c;
+  background: #8EBA43;
   border: none;
   color: #fff;
 }
@@ -1150,7 +1150,7 @@ i.icon-border-v3.g-icon-hover-1 span {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background: rgba(231,76,60,.8);
+	background: rgba(0,176,10,.7);
 	transition: all 0.3s ease-in-out;
 }
 .our-team-v4-member-wrapper:hover div {
@@ -1167,7 +1167,7 @@ i.icon-border-v3.g-icon-hover-1 span {
 	margin: 0 5px 10px;
 }
 .our-team-v4-member .g-social-icons-v2 a:hover {
-	background: #e74c3c;
+	background: #8EBA43;
 }
 .our-team-v4-member div em {
 	display: block;
@@ -1205,7 +1205,7 @@ i.icon-border-v3.g-icon-hover-1 span {
 	line-height: 1;
 }
 .our-team-v4__role {
-	color: #e74c3c;
+	color: #8EBA43;
 	font-size: 11px;
 	font-weight: bold;
 	font-style: normal;
@@ -1337,7 +1337,7 @@ i.icon-border-v3.g-icon-hover-1 span {
 }
 .testimonials-v6 .owl-prev:hover,
 .testimonials-v6 .owl-next:hover {
-	background: #e74c3c;
+	background: #8EBA43;
 }
 .testimonials-v6 .owl-prev:after,
 .testimonials-v6 .owl-next:after {
@@ -1380,7 +1380,7 @@ i.icon-border-v3.g-icon-hover-1 span {
   width: 130px;
 }
 .footer-v9 {
-	background: #e74c3c;
+	background: #8EBA43;
 	color: rgba(255,255,255,.7);
 	padding: 40px 0 25px;
 }
@@ -1428,14 +1428,19 @@ em.invalid {
 
 /*Success message*/
 .sky-form .message {
-    color: #c1493c;
+    color: #8EBA43;
 
 }
 
 .sky-form .message i {
-    border: 1px solid #c1493c;
+    border: 1px solid #8EBA43;
 }
 
 .sky-form.submited .message p {
     color: #383339;
 }
+#map {
+	width: 100%;
+	height: 400px;
+	background-color: grey;
+  }
