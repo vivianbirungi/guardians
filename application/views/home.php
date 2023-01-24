@@ -1018,6 +1018,9 @@
 					<li class="page-scroll">
 						<a href="">Blog</a>
 					</li>
+					<li class="page-scroll">
+						<a data-target="#adminLogin" data-toggle="modal" >Admin Login</a>
+					</li>
 				</ul>
 			</div>
 		</div>
@@ -1080,9 +1083,48 @@
 	 sponsored by The Regional Universities Forum for Capacity Building in Agriculture (RUFORUM).</p></div>
     <div class="modal-footer">Guardians of Nature</div>
     </div>
+	</div>
+
+
 </div>
+<div class='modal fade' role="dialog" id="adminLogin">
 
-
+		<div  class="modal-dialog">
+		<div  class="modal-content">
+		<div  class="modal-header">Margaret Masette Company Director</div>
+		<div  class="modal-body" style=" padding:70px;">
+		<div class="container" style=" border:2px solid blue;
+        
+        
+        height:500px;
+        width:400px;">
+	<div class="row" style="height:90px;
+        width:396px;
+        background-color:paleturquoise;">
+		 <h1> Login</h1>
+       
+        </div><br /><br />
+         
+        <form method="post" action="<?php echo base_url('Welcome/admin_login');?>">
+		<div class="form-group">
+    <label for="exampleFormControlInput1">Email address</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="email" style="border-radius:20px">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Password</label>
+    <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="password" name="password" style="border-radius:20px">
+  </div>
+                      
+              <button type="submit" class="btn btn-block btn-success" style="border-radius:20px"> Login</button>
+         
+        
+ 
+	</div>
+		</form>
+		</div>
+		<div class="modal-footer">Guardians of Nature</div>
+		</div>
+		</div>
 </div>
 
 

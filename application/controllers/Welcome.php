@@ -38,5 +38,11 @@ class Welcome extends CI_Controller {
 		$this->email->message('Testing the email class.');
 
 		$this->email->send();
+
+	}
+	public function admin_login(){
+		$email = $this->input->post("email");
+		$password = $this->input->post("password");
+		die(var_dump($email, $password));
 	}
 }
