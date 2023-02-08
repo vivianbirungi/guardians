@@ -1091,31 +1091,31 @@
 
 		<div  class="modal-dialog">
 		<div  class="modal-content">
-		<div  class="modal-header">Margaret Masette Company Director</div>
 		<div  class="modal-body" style=" padding:70px;">
-		<div class="container" style=" border:2px solid blue;
+		<div class="container" style=" border:5px solid #8EBA43;
         
         
         height:500px;
         width:400px;">
 	<div class="row" style="height:90px;
-        width:396px;
-        background-color:paleturquoise;">
-		 <h1> Login</h1>
-       
+        
+		text-align:center;
+        background-color:#ffffff;">
+		 <h1> Hello, Admin</h1>
+         <p>Welcome back, Login to continue</p>
         </div><br /><br />
          
         <form method="post" action="<?php echo base_url('Welcome/admin_login');?>">
 		<div class="form-group">
     <label for="exampleFormControlInput1">Email address</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="email" style="border-radius:20px">
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="email" style="border-radius:20px; background-color:#fff">
   </div>
   <div class="form-group">
     <label for="exampleFormControlInput1">Password</label>
     <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="password" name="password" style="border-radius:20px">
   </div>
                       
-              <button type="submit" class="btn btn-block btn-success" style="border-radius:20px"> Login</button>
+              <button type="submit" class="btn btn-block" style="border-radius:20px ;background-color:#8EBA43; color:#fff; margin-top:60px"> Login</button>
          
         
  

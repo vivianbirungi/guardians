@@ -1,16 +1,15 @@
 
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-class Portifolio extends CI_Model {
+class Admin extends CI_Model {
     public $table;
     public $primary_key;
     public $order_by;
 
     function __construct(){
         parent::__construct();
-        $this->table = "portifolio";
-        $this->primary_key = "portifolio_id";
-        $this->order_by = "date_joined";
+        $this->table = "admins";
+        $this->primary_key = "id";
     }
 
     function adminLogin(){
@@ -19,29 +18,41 @@ class Portifolio extends CI_Model {
         $search = array('email'=>$email, 'password'=>$password);
 		$query = $this->db->get_where('admins', $search);
         $user = $query->row_array();
-
+        if($user){
+        $token = $_SESSION['__ci_last_regenerate'];
+				$data = array(
+						'logged_in' => TRUE,
+						'user_id' => $user['id'],
+						'email' => $user['email'],
+						'access' => 1,
+						'token' => $token
+					);
+                $this->session->set_userdata($data);
+				$result['status'] = 'success';
+				$result['msg'] = 'Successfully logged in';
+       
     }
-    function upload_portifolio(){
-        if(!$this->settings->logged_in()) redirect('login');
-        $input = $this->validate([
-            'file' => [
-                'uploaded[file]',
-                'mime_in[file,image/jpg,image/jpeg,image/png]',
-                'max_size[file,1024]',]]);
-                if (!$input) {
-                    print_r('Choose a valid file');
-                } else {
-                    $img = $this->request->getFile('file');
-                    $img->move(WRITEPATH . 'uploads');
-            
-                    $data = [
-                       'name' =>  $img->getName(),
-                       'type'  => $img->getClientMimeType()
-                    ];
-            
-                    $save = $db->insert($data);
-                    print_r('File has successfully uploaded');        
-                }
+     else {
+    $result['msg']= '
+							<div class="uk-alert uk-alert-danger" data-uk-alert>
+								<a href="#" class="uk-alert-close uk-close"></a>
+								<h4 class="heading_b">Login Failed</h4>
+								Email/Password is invalid. 
+							</div>';
+			$result['error'] = 'Email/Password is invalid';
+}
+return $result;
+
+}
+    function uploadPortifolio($data, $user_id){
+        // Update the database with the file path
+  $data = array(
+    'portifolio' => $data['full_path']
+ );
+ 
+ $this->db->where('user_id', $user_id);
+ $this->db->update($table, $data);
+
     }
 }
 

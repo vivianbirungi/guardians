@@ -5,6 +5,7 @@ class Welcome extends CI_Controller {
 	public function __construct(){
 		parent::__construct();
 		$this->load->model("Portifolio");
+		$this->load->model("Admin");
 	}
 	public function index()
 	{
@@ -43,6 +44,82 @@ class Welcome extends CI_Controller {
 	public function admin_login(){
 		$email = $this->input->post("email");
 		$password = $this->input->post("password");
-		die(var_dump($email, $password));
+		$login_status = $this->Admin->adminLogin();
+		if(isset($login_status['status'])){
+                if($login_status['status'] == 'success') $this->load->view('admin');
+
+                else
+				{
+					$data['errors'] = $login_status['msg'];
+				}
+			}
+
+		
+
 	}
+	
+	public function upload_pdf()
+{
+	if(!is_dir('./uploads/'))
+	mkdir('./uploads/', 0777);
+    $config['upload_path'] = './uploads/';
+    $config['allowed_types'] = 'pdf';
+    $config['max_size'] = 1024000;
+    $user_id = $this->session->userdata('user_id');
+    $this->load->library('upload', $config);
+
+    if (!$this->upload->do_upload('pdf_file')) {
+        $error = array('error' => $this->upload->display_errors());
+        print_r($error);
+    } else {
+        $data = array('upload_data' => $this->upload->data());
+        $result = $this->Admin->uploadPortifolio($data, $user_id);
+        print_r($data);
+    }
 }
+
+}
+
+	
+	// 	public function __construct(){
+	// 		$this->db = db_connect();
+	// 		$this->model= new File;
+	// 		$this->session = session();
+	// 		$this->request =  \Config\Services::request();
+	// 		$this->data['session']= $this->session ;
+	// 		$this->data['request'] = $this->request ;
+	// 		$this->data['uploads']= $this->model->findAll();
+	// 	}
+	// 	public function index(){
+	// 		return view('home', $this->data);
+	// 	}
+	 
+	// 	public function upload(){
+	// 		if(!is_dir('./uploads/'))
+	// 		mkdir('./uploads/');
+	// 		$label = $this->request->getPost('label');
+	// 		$file = $this->request->getFile('file');
+	// 		$fname = $file->getRandomName();
+	// 		while(true){
+	// 			$check = $this->model->where("path", "uploads/{$fname}")->countAllResults();
+	// 			if($check > 0){
+	// 				$fname = $file->getRandomName();
+	// 			}else{
+	// 				break;
+	// 			}
+	// 		}
+	// 		if($file->move("uploads/", $fname)){
+	// 			$this->model->save([
+	// 				"label" =>$this->db->escapeString($label),
+	// 				"path" => "uploads/".$fname
+	// 			]);
+	// 			$this->session->setFlashdata('main_success',"New File Uploaded successfully.");
+	// 			return redirect()->to('/');
+	// 		}else{
+	// 			$this->session->setFlashdata('main_success',"File Upload failed.");
+	// 		}
+	// 			return view('home', $this->data);
+	// 	}
+	// }
+
+
