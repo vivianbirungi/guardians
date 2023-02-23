@@ -24,6 +24,10 @@ class Admin extends CI_Model {
 						'logged_in' => TRUE,
 						'user_id' => $user['id'],
 						'email' => $user['email'],
+                        'firstname' =>$user['first_name'],
+                        'firstname' =>$user['first_name'],
+                        'title' =>$user['title'],
+                        'portifolio'=>$user['portifolio'],
 						'access' => 1,
 						'token' => $token
 					);
@@ -44,15 +48,31 @@ class Admin extends CI_Model {
 return $result;
 
 }
-    function uploadPortifolio($data, $user_id){
+function uploadPortifolio($data, $user_id){
         // Update the database with the file path
-  $data = array(
-    'portifolio' => $data['full_path']
+     
+  $portifolio = array(
+    'portifolio' => $data['upload_data']['file_name']
  );
  
- $this->db->where('user_id', $user_id);
- $this->db->update($table, $data);
-
+ $this->db->where('id', $user_id);
+ $result = $this->db->update('admins', $portifolio);
+ return $result;
     }
+
+function editUser($user){
+    $email = $this->input->post('email');
+    $firstname = $this->input->post('firstname');
+    $lastname = $this->input->post('lastname');
+    $title = $this->input->post('title');
+    $data = array(
+        'email'=>$email,
+        'last_name' => $lastname,
+        'first_name' => $first_name,
+        'title'=>$title
+    );
+    $this->db->where('id', user);
+    $result = $this->db->update('admins',$data);
+}
 }
 

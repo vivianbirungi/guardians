@@ -160,7 +160,7 @@
             <!-- End Carousel -->
 
             <!-- Content Info -->
-            <div class="col-md-5">
+            <div class="col-md-5" style="margin-top :25px;">
             	<h2><?php  echo $portifolio->portifolio_name;  ?></h2>
                 <p><?php  echo $portifolio->portifolio_description;  ?></p>
                 <ul class="list-unstyled">
@@ -218,10 +218,10 @@
 			<div class="container">
 				<div class="page-scroll">
 					<a href="#body" class="footer-logo">
-						<img src="<?php echo base_url();?>assets/img/logo-light3.png" alt="Logo" class="g-mb-30">
+						<img src="<?php echo base_url();?>assets/img/logo-dark3.png" alt="Logo" class="g-mb-30">
 					</a>
 				</div>
-				<div class="g-mb-35">Integer accumsan maximus leo, et consectetur metus vestibulum in. Vestibulum viverra justo odio maximus efficitur</div>
+				<div class="g-mb-35"></div>
 				<ul class="g-social-icons-v2 g-mb-30">
 					<li>
 						<a href="#">
@@ -269,13 +269,57 @@
 					<li class="page-scroll">
 						<a href="#Contact">Contact</a>
 					</li>
+					<li class="page-scroll">
+						<a href="">Blog</a>
+					</li>
+					<li class="page-scroll">
+						<a data-target="#adminLogin" data-toggle="modal" >Admin Login</a>
+					</li>
 				</ul>
 			</div>
 		</div>
 		<!-- End Footer 9 -->
 
 	</main>
+	<div class='modal fade' role="dialog" id="adminLogin">
 
+<div  class="modal-dialog">
+<div  class="modal-content">
+<div  class="modal-body" style=" padding:70px;">
+<div class="container" style=" border:5px solid #8EBA43;
+
+
+height:500px;
+width:400px;">
+<div class="row" style="height:90px;
+
+text-align:center;
+background-color:#ffffff;">
+ <h1> Hello, Admin</h1>
+ <p>Welcome back, Login to continue</p>
+</div><br /><br />
+ 
+<form method="post" action="<?php echo base_url('Welcome/admin_login');?>">
+<div class="form-group">
+<label for="exampleFormControlInput1">Email address</label>
+<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="email" style="border-radius:20px; background-color:#fff">
+</div>
+<div class="form-group">
+<label for="exampleFormControlInput1">Password</label>
+<input type="password" class="form-control" id="exampleFormControlInput1" placeholder="password" name="password" style="border-radius:20px">
+</div>
+			  
+	  <button type="submit" class="btn btn-block" style="border-radius:20px ;background-color:#8EBA43; color:#fff; margin-top:60px"> Login</button>
+ 
+
+
+</div>
+</form>
+</div>
+<div class="modal-footer">Guardians of Nature</div>
+</div>
+</div>
+</div>
 	<!-- JS Global Compulsory -->
 	<script src="<?php echo base_url();?>asset1/plugins/jquery/jquery.min.js"></script>
 	<script src="<?php echo base_url();?>asset1/plugins/jquery/jquery-migrate.min.js"></script>

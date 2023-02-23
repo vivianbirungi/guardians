@@ -183,34 +183,43 @@
     <!-- profile -->
 <div class="box-shadow profile card">
     <h2>Profile Info</h2>
+	
     <form method="post">
   <div class="form-group">
     <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" style="border-radius:10px">
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" style="border-radius:10px" name='email' value="<?php echo $user['email']; ?>">
     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
   </div>
   <div class="form-group">
     <label for="exampleInputPassword1">First Name</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" style="border-radius:10px">
+    <input type="text" class="form-control" id="firstname" placeholder="First Name" name='firstname' style="border-radius:10px" value="<?php echo $user['firstname']; ?>" >
   </div>
   <div class="form-group">
     <label for="exampleInputPassword1">Last Name</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" style="border-radius:10px">
+    <input type="text" class="form-control" id="lastname" placeholder="Last Name" style="border-radius:10px" name='lastname' value="<?php echo $user['lastname']; ?>">
   </div>
   <div class="form-group">
     <label for="exampleInputPassword1">Headline/ Current Title</label>
-    <input type="password" class="form-control rounded-2" id="exampleInputPassword1" placeholder="Password" style="border-radius:10px">
+    <input type="text" class="form-control rounded-2" id="title" placeholder="Title" style="border-radius:10px" name='title' value="<?php echo $user['title']; ?>">
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
     </div>
 <div class="box-shadow profile">
     <h1>Portifolio</h1>
-	<form action="<?php echo site_url('Welcome/upload_pdf'); ?>" method="post" enctype="multipart/form-data">
-    <input type="file" name="pdf_file">
-    <input type="submit" value="Upload">
-</form>
+	<div class="row">
+		<div class="col-10">
+		<iframe src="<?php echo base_url('Welcome/view_pdf'); ?>" frameborder="0" style="width:100%; height:500px;"></iframe>
 
+		</div>
+		<div class="col-2">
+			<form action="<?php echo site_url('Welcome/upload_pdf'); ?>" method="post" enctype="multipart/form-data">
+				<input type="file" name="pdf_file" value="<?php echo $user['portifolio']; ?>">
+				<input type="submit" value="Upload">
+			</form>
+</div>
+	
+</div>
 </div>
 
     </div>

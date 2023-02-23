@@ -45,8 +45,9 @@ class Welcome extends CI_Controller {
 		$email = $this->input->post("email");
 		$password = $this->input->post("password");
 		$login_status = $this->Admin->adminLogin();
+		$data['user'] = $this->session->userdata();
 		if(isset($login_status['status'])){
-                if($login_status['status'] == 'success') $this->load->view('admin');
+                if($login_status['status'] == 'success') $this->load->view('admin',$data);
 
                 else
 				{
@@ -60,12 +61,12 @@ class Welcome extends CI_Controller {
 	
 	public function upload_pdf()
 {
-	if(!is_dir('./uploads/'))
-	mkdir('./uploads/', 0777);
-    $config['upload_path'] = './uploads/';
+    $user_id = $this->session->userdata('user_id');
+
+	if(!is_dir('./uploads/'.$user_id.'/'))mkdir('./uploads/'.$user_id.'/', 0777);
+    $config['upload_path'] = './uploads/'.$user_id.'/';
     $config['allowed_types'] = 'pdf';
     $config['max_size'] = 1024000;
-    $user_id = $this->session->userdata('user_id');
     $this->load->library('upload', $config);
 
     if (!$this->upload->do_upload('pdf_file')) {
@@ -74,9 +75,34 @@ class Welcome extends CI_Controller {
     } else {
         $data = array('upload_data' => $this->upload->data());
         $result = $this->Admin->uploadPortifolio($data, $user_id);
-        print_r($data);
+        
     }
+	if($result == 1) $this->load->view('admin');
 }
+ public function edit_user(){
+	$data = $this->session->userdata();
+	$result = $this->Admin->editUser($data['user_id']);
+
+   if(isset($result)){
+	if($result == 1) $this->load->view('admin',$data);
+
+	else
+	{
+		$data['errors'] = $result['msg'];
+	}
+	}
+
+ }
+ public function view_pdf() {
+	$data = $this->session->userdata();
+
+    $pdf_file = './uploads/'.$data['$user_id'].'/'.$data['portifolio'];
+    header('Content-type: application/pdf');
+    header('Content-Disposition: inline; filename="' . $pdf_file . '"');
+    header('Content-Transfer-Encoding: binary');
+    header('Accept-Ranges: bytes');
+    readfile($pdf_file);
+  }
 
 }
 
