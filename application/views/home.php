@@ -69,6 +69,53 @@
 	  padding-right:20px  !important;
 	  font-style: normal !important;
   }
+  .pie {
+  --p:20;
+  --b:22px;
+  --c:darkred;
+  --w:150px;
+
+  width: var(--w);
+  aspect-ratio: 1;
+  position: relative;
+  display: inline-grid;
+  margin: 5px;
+  place-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.pie:before,
+.pie:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+.pie:before {
+  inset: 0;
+  background:
+    radial-gradient(farthest-side,var(--c) 98%,#0000) top/var(--b) var(--b) no-repeat,
+    conic-gradient(var(--c) calc(var(--p)*1%),#0000 0);
+  -webkit-mask: radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+          mask: radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+}
+.pie:after {
+  inset: calc(50% - var(--b)/2);
+  background: var(--c);
+  transform: rotate(calc(var(--p)*3.6deg)) translateY(calc(50% - var(--w)/2));
+}
+.animate {
+  animation: p 1s .5s both;
+}
+.no-round:before {
+  background-size: 0 0, auto;
+}
+.no-round:after {
+  content: none;
+}
+@keyframes p{
+  from{--p:0}
+}
 
 </style>
 </head>
@@ -162,7 +209,7 @@
 				<div id="rev_slider_104_1" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.0.7">
 					<ul>
 						<!-- SLIDE  -->
-						<li data-index="rs-309" data-transition="slideoverhorizontal" data-slotamount="default" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut"
+						<li data-index="rs-309"  data-transition="slideoverhorizontal" data-slotamount="default" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut"
 						 data-masterspeed="1000" data-thumb="<?php echo base_url();?>asset1/plugins/revolution-slider/assets/images/bigbold_3-100x50.jpg" data-rotate="0"
 						 data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off" data-title="Guardians of Nature"
 						 data-description="">
@@ -212,9 +259,10 @@
 								<i class="fa fa-chevron-right"></i>
 							</div>
 						</li>
+						
 						<!-- SLIDE  -->
 						<li data-index="rs-310" data-transition="slideoverhorizontal" data-slotamount="default" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut"
-						 data-masterspeed="1000" data-thumb="<?php echo base_url();?>asset1/plugins/revolution-slider/assets/images/typing_cover-100x50.jpg" data-rotate="0"
+						 data-masterspeed="1000"  data-start="700" data-basealign="slide" data-thumb="<?php echo base_url();?>asset1/plugins/revolution-slider/assets/images/typing_cover-100x50.jpg" data-rotate="0"
 						 data-saveperformance="off" data-title="Great Consultancy" data-description="">
 							<!-- MAIN IMAGE -->
 							<img src="<?php echo base_url();?>asset1/plugins/revolution-slider/assets/images/typing_cover.jpg" alt="" data-bgposition="center center" data-bgfit="cover"
@@ -227,7 +275,7 @@
 							<div class="tp-caption tp-shape tp-shapewrapper   rs-parallaxlevel-0" id="slide-310-layer-11" data-x="['center','center','center','center']"
 							 data-hoffset="['0','0','0','0']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['0','0','0','0']" data-width="full"
 							 data-height="['400','400','400','550']" data-whiFtespace="nowrap" data-transform_idle="o:1;" data-style_hover="cursor:default;"
-							 data-transform_in="opacity:0;s:1500;e:Power2.easeInOut;" data-transform_out="opacity:0;s:1000;s:1000;" data-start="0"
+							 data-transform_in="opacity:0;s:1500;e:Power2.easeInOut;" data-transform_out="opacity:0;s:1000;s:1000;" data-start="700"
 							 data-basealign="slide" data-responsive_offset="off" data-responsive="off" style="z-index: 5;background-color:rgba(0, 0, 0, 0.50);border-color:rgba(0, 0, 0, 0);background:linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.45) 100%);">
 							</div>
 
@@ -237,7 +285,7 @@
 							 data-fontsize="['110','100','70','60']" data-lineheight="['100','90','60','60']" data-width="['none','none','none','400']"
 							 data-height="none" data-whitespace="['nowrap','nowrap','nowrap','normal']" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
 							 data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
-							 data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="500" data-splitin="none" data-splitout="none"
+							 data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="750" data-splitin="none" data-splitout="none"
 							 data-basealign="slide" data-responsive_offset="off" style="z-index: 6; white-space: nowrap;">Great Consultancy
 							</div>
 
@@ -246,7 +294,7 @@
 							 data-hoffset="['55','55','33','20']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['40','1','74','58']"
 							 data-fontsize="['15','15','15','13']" data-lineheight="['24','24','24','20']" data-width="['410','410','410','280']"
 							 data-height="['60','100','100','100']" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
-							 data-transform_out="y:50px;opacity:0;s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-start="650" data-splitin="none"
+							 data-transform_out="y:50px;opacity:0;s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-start="800" data-splitin="none"
 							 data-splitout="none" data-basealign="slide" data-responsive_offset="off" data-responsive="off" style="z-index: 7; min-width: 410px; max-width: 410px; max-width: 60px; max-width: 60px; white-space: normal;">We provide the best consultancy services for your business
 							</div>
 
@@ -258,7 +306,7 @@
 							 data-hoffset="['676','676','226','216']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['50','50','30','20']"
 							 data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
 							 data-style_hover="c:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);cursor:pointer;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
-							 data-transform_out="y:50px;opacity:0;s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-start="650" data-splitin="none"
+							 data-transform_out="y:50px;opacity:0;s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-start="800" data-splitin="none"
 							 data-splitout="none" data-actions='[{"event":"click","action":"jumptoslide","slide":"next","delay":""}]' data-basealign="slide"
 							 data-responsive_offset="off" data-responsive="off" style="z-index: 9; white-space: nowrap;padding:15px 20px 15px 20px;border-color:rgba(255, 255, 255, 0.25);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;">
 								<i class="fa fa-chevron-right"></i>
@@ -267,7 +315,7 @@
 						<!-- SLIDE  -->
 						<li data-index="rs-311" data-transition="slideoverhorizontal" data-slotamount="default" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut"
 						 data-masterspeed="1000" data-thumb="<?php echo base_url();?>asset1/plugins/revolution-slider/assets/images/bigbold_1-100x50.jpg" data-rotate="0"
-						 data-saveperformance="off" data-title="Scroll Down" data-description="">
+						 data-saveperformance="off" data-title="Guardians of Nature" data-description="">
 							<!-- MAIN IMAGE -->
 							<img src="<?php echo base_url();?>asset1/plugins/revolution-slider/assets/images/bigbold_1.jpg" alt="" data-bgposition="center center" data-bgfit="cover"
 							 data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
@@ -305,6 +353,57 @@
 
 							<!-- LAYER NR. 5 -->
 							<div class="tp-caption BigBold-Button rev-btn  rs-parallaxlevel-0" id="slide-311-layer-12" data-x="['left','left','left','left']"
+							 data-hoffset="['676','676','226','216']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['50','50','30','20']"
+							 data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+							 data-style_hover="c:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);cursor:pointer;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
+							 data-transform_out="y:50px;opacity:0;s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-start="650" data-splitin="none"
+							 data-splitout="none" data-actions='[{"event":"click","action":"jumptoslide","slide":"next","delay":""}]' data-basealign="slide"
+							 data-responsive_offset="off" data-responsive="off" style="z-index: 9; white-space: nowrap;padding:15px 20px 15px 20px;border-color:rgba(255, 255, 255, 0.25);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;">
+								<i class="fa fa-chevron-right"></i>
+							</div>
+						</li>
+						<!-- SLIDE  -->
+						<li data-index="rs-312" data-transition="slideoverhorizontal" data-slotamount="default" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut"
+						 data-masterspeed="1000" data-thumb="<?php echo base_url();?>asset1/plugins/revolution-slider/assets/images/bigbold_3-100x50.jpg" data-rotate="0"
+						 data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off" data-title="Guardians of Nature"
+						 data-description="">
+							<!-- MAIN IMAGE -->
+							<img src="<?php echo base_url();?>asset1/plugins/revolution-slider/assets/images/bigbold_3.jpg" alt="" data-bgposition="center center" data-bgfit="cover"
+							 data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+							<!-- LAYERS -->
+
+							<!-- LAYER NR. 1 -->
+							<div class="tp-caption tp-shape tp-shapewrapper   rs-parallaxlevel-0" id="slide-312-layer-11" data-x="['center','center','center','center']"
+							 data-hoffset="['0','0','0','0']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['0','0','0','0']" data-width="full"
+							 data-height="['400','400','400','550']" data-whitespace="nowrap" data-transform_idle="o:1;" data-style_hover="cursor:default;"
+							 data-transform_in="opacity:0;s:1500;e:Power2.easeInOut;" data-transform_out="opacity:0;s:1000;s:1000;" data-start="0"
+							 data-basealign="slide" data-responsive_offset="off" data-responsive="off" style="z-index: 5;background-color:rgba(0, 0, 0, 0.50);border-color:rgba(0, 0, 0, 0);background:linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.45) 100%);">
+							</div>
+
+							<!-- LAYER NR. 2 -->
+							<div class="tp-caption BigBold-Title   tp-resizeme rs-parallaxlevel-0" id="slide-312-layer-1" data-x="['left','left','left','left']"
+							 data-hoffset="['50','50','30','17']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['110','110','180','160']"
+							 data-fontsize="['110','100','70','60']" data-lineheight="['110','100','70','60']" data-width="['none','none','none','400']"
+							 data-height="none" data-whitespace="['nowrap','nowrap','nowrap','normal']" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
+							 data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];"
+							 data-mask_out="x:inherit;y:inherit;" data-start="500" data-splitin="none" data-splitout="none" data-basealign="slide"
+							 data-responsive_offset="off" style="z-index: 6; white-space: nowrap;">Guardians of Nature
+							</div>
+
+							<!-- LAYER NR. 3 -->
+							<div class="tp-caption BigBold-SubTitle   rs-parallaxlevel-0" id="slide-312-layer-4" data-x="['left','left','left','left']"
+							 data-hoffset="['55','55','33','20']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['40','1','74','58']"
+							 data-fontsize="['15','15','15','13']" data-lineheight="['24','24','24','20']" data-width="['410','410','410','280']"
+							 data-height="['60','100','100','100']" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
+							 data-transform_out="y:50px;opacity:0;s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-start="650" data-splitin="none"
+							 data-splitout="none" data-basealign="slide" data-responsive_offset="off" data-responsive="off" style="z-index: 7; min-width: 410px; max-width: 410px; max-width: 60px; max-width: 60px; white-space: normal;">We foster development in the broad areas of fisheries, aquaculture and agriculture
+							</div>
+
+							<!-- LAYER NR. 4 -->
+							
+
+							<!-- LAYER NR. 5 -->
+							<div class="tp-caption BigBold-Button rev-btn  rs-parallaxlevel-0" id="slide-312-layer-12" data-x="['left','left','left','left']"
 							 data-hoffset="['676','676','226','216']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['50','50','30','20']"
 							 data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
 							 data-style_hover="c:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);cursor:pointer;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
@@ -600,29 +699,30 @@
 			<!-- Pie Charts v3 -->
 			<div class="row pie-progress-charts g-mb-50">
 				<div class="inner-pchart col-md-3 col-sm-6 g-mb-30--sm">
-					<div class="circle" id="circle-1"></div>
-					<h4 class="g-mb-15">Happty Clients</h4>
+				<div class="pie animate" style="--p:90;--c:#228B22; --b:10px; margin-bottom:40px"> 90%</div>
+
+					<h4 class="g-mb-15">Happy Clients</h4>
 					<p>Our clients are our priority , the big percentage is for them.</p>
 				</div>
-				<div class="inner-pchart col-md-3 col-sm-6 g-mb-30--sm">
-					<div class="circle" id="circle-2"></div>
+				<div class="inner-pchart col-md-3 col-sm-6 g-mb-50--sm">
+				<div class="pie animate" style="--p:80;--c:#228B22; --b:10px; margin-bottom:40px"> 80%</div>
 					<h4 class="g-mb-15">Consultancy</h4>
 					<p>The clients we have given this service testify to the effort and their deliverables show</p>
 				</div>
 				<div class="inner-pchart col-md-3 col-sm-6 g-mb-30--sm">
-					<div class="circle" id="circle-3"></div>
+				<div class="pie animate" style="--p:70;--c:#228B22; --b:10px; margin-bottom:40px"> 70%</div>
+
 					<h4 class="g-mb-15">Our Team</h4>
 					<p>our team has skills in achieving targets set for both our clients and the company at large</p>
 				</div>
 				<div class="inner-pchart col-md-3 col-sm-6">
-					<div class="circle" id="circle-4"></div>
+				<div class="pie animate" style="--p:100;--c:#228B22; --b:10px; margin-bottom:40px"> 100%</div>
+
 					<h4 class="g-mb-15">COMPLETED PROJECTS</h4>
 					<p>our projects have so far raised this percentage for our company and we are proud of the effort and skills offered</p>
 				</div>
 			</div>
-			<!-- End Pie Charts v3 -->
-
-			
+			<!-- End Pie Charts v3 -->		
 		</div>
 		<!-- End Our Best Side -->
 
@@ -643,7 +743,45 @@
 			<div class="container our-team-v4-members" >
 				<div class="row">
 					<!-- Col -->
-					<div class="col-md-4 col-sm-6 col-xs-6 col-2xs-12">
+					<div class="col-md-3 col-sm-6 col-xs-6 col-2xs-12">
+						<div class="our-team-v4-member g-mb-50">
+							<div class="our-team-v4-member-wrapper g-mb-40">
+								<img src="<?php echo base_url();?>assets/img-temp/team/2.jpg" alt="">
+								<div>
+									<em>
+										changing your mind and changing world
+									</em>
+									<ul class="g-social-icons-v2">
+										<li>
+											<a href="#">
+												<i class="fa fa-twitter"></i>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<i class="fa fa-pinterest"></i>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<i class="fa fa-facebook"></i>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<i class="fa fa-linkedin"></i>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<em class="our-team-v4__role">Company Director</em>
+							<strong class="our-team-v4__name">Margaret Masette</strong>
+							<span class="our-team-v4__position">Head Photographer</span>
+							<a style="color:dodgerblue" data-target="#person1" data-toggle="modal">View full profile</a>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6 col-2xs-12">
 						<div class="our-team-v4-member g-mb-50">
 							<div class="our-team-v4-member-wrapper g-mb-40">
 								<img src="<?php echo base_url();?>assets/img-temp/team/2.jpg" alt="">
@@ -683,7 +821,7 @@
 					</div>
 					<!-- End Col -->
 					<!-- Col -->
-					<div class="col-md-4 col-sm-6 col-xs-6 col-2xs-12">
+					<div class="col-md-3 col-sm-6 col-xs-6 col-2xs-12">
 						<div class="our-team-v4-member g-mb-50">
 							<div class="our-team-v4-member-wrapper g-mb-40">
 								<img src="<?php echo base_url();?>assets/img-temp/team/5.jpg" alt="">
@@ -723,7 +861,7 @@
 					</div>
 					<!-- End Col -->
 					<!-- Col -->
-					<div class="col-md-4 col-sm-6 col-xs-6 col-2xs-12">
+					<div class="col-md-3 col-sm-6 col-xs-6 col-2xs-12">
 						<div class="our-team-v4-member g-mb-50">
 							<div class="our-team-v4-member-wrapper g-mb-40">
 								<img src="<?php echo base_url();?>assets/img-temp/team/1.jpg" alt="">
@@ -956,8 +1094,9 @@
 		<!-- END Form -->
 
 		<!-- GMaps -->
-		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1994.8815729496046!2d32.5273118!3d0.3013218!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177da34849e3dfef%3A0x88506bf5eba9ec99!2sPrime+Village+Mall!5e0!3m2!1snl!2sug!4v1539860264808" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-		<!-- END GMaps -->
+		
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.817643978226!2d32.43488471409558!3d0.033361964400991866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177d8134f3b79eb1%3A0xfb3cc7ec0fe58544!2sBuku%20Rd%2C%20Entebbe!5e0!3m2!1sen!2sug!4v1677582168145!5m2!1sen!2sug" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			<!-- END GMaps -->
 
 		<!-- Footer 9 -->
 		<div class="footer-v9 text-center">
@@ -1092,7 +1231,7 @@
 		<div  class="modal-dialog">
 		<div  class="modal-content">
 		<div  class="modal-body" style=" padding:70px;">
-		<div class="container" style=" border:5px solid #8EBA43;
+		<div class="container" style=" border:5px solid #228B22;
         
         
         height:500px;
@@ -1115,7 +1254,7 @@
     <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="password" name="password" style="border-radius:20px">
   </div>
                       
-              <button type="submit" class="btn btn-block" style="border-radius:20px ;background-color:#8EBA43; color:#fff; margin-top:60px"> Login</button>
+              <button type="submit" class="btn btn-block" style="border-radius:20px ;background-color:#228B22; color:#fff; margin-top:60px"> Login</button>
          
         
  
