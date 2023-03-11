@@ -62,3 +62,16 @@ $route['admin'] = 'welcome/admin_login';
 // Map the URI 'blog/post/(:num)' to the Blog controller's view method,
 // passing the post ID as a parameter
 $route['portifolio/(:any)'] = 'welcome/tryPage/$1';
+$route['about'] = 'home#about';
+$route['services'] = 'welcome#services';
+$route['contact'] = 'welcome#contact';
+$route['Whywe'] = 'welcome#WhyWe';
+$route['WorkProcess'] = 'welcome#WorkProcess';
+$route['Skills'] = 'welcome#Skills';
+$route['Team'] = 'welcome#Team';
+$route['Testimonials'] = 'welcome#Testimonials';
+$route['Contact'] = 'welcome#Contact';
+$route['adminLogin'] = 'welcome#adminLogin';
+
+
+				

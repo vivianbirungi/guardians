@@ -194,6 +194,7 @@
     <label for="exampleInputPassword1">First Name</label>
     <input type="text" class="form-control" id="firstname" placeholder="First Name" name='firstname' style="border-radius:10px" value="<?php echo $user['firstname']; ?>" >
   </div>
+  
   <div class="form-group">
     <label for="exampleInputPassword1">Last Name</label>
     <input type="text" class="form-control" id="lastname" placeholder="Last Name" style="border-radius:10px" name='lastname' value="<?php echo $user['lastname']; ?>">

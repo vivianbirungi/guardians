@@ -137,7 +137,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="#body">
+					<a class="navbar-brand" href="<?php echo base_url('');?>">
 						<img src="<?php echo base_url();?>assets/img/logo-dark3.png" alt="" style="height:40px; width:40px;">
 					</a>
 				</div>
@@ -147,7 +147,7 @@
 					<div class="menu-container">
 						<ul class="nav navbar-nav">
 							<li class="page-scroll">
-								<a href="#About">
+								<a href="#about">
 									<span data-hover="About">About</span>
 								</a>
 							</li>
@@ -265,7 +265,7 @@
 		<!-- End Promo Block -->
 
 		<!-- About Us Block -->
-		<div class="chess-about-us equal-height-columns clearfix" id="About">
+		<div class="chess-about-us equal-height-columns clearfix" id="about">
 			<div class="chess-about-us-item chess-about-us-item--1 equal-height-column">
 				<div class="chess-about-us-inner chess-about-us-inner--left">
 					<h3>We love our customers</h3>
@@ -383,7 +383,7 @@
 						if( count( $categories ) > 0 ) {
 							foreach($portifolios as $portifolio){
 								echo '<li class="col-md-3 col-sm-6 col-xs-12 mix '.$portifolio->category.'" data-cat="1">
-									<a href="'.base_url().'welcome/portifolio/'.$portifolio->portifolio_id.'">
+									<a href="'.base_url().'portifolio/'.$portifolio->portifolio_id.'">
 										<img class="img-responsive" src="'.base_url().'assets/img/main/'.$portifolio->portifolio_image.'" alt="">
 										<span class="sorting-cover">
 											<span>'.$portifolio->portifolio_name.'</span>
@@ -973,7 +973,7 @@
 				</ul>
 				<ul class="footer-v9-menu list-inline">
 					<li class="page-scroll">
-						<a href="#About">About</a>
+						<a href="#about">About</a>
 					</li>
 					<li class="page-scroll">
 						<a href="#WhyWe">Why We</a>

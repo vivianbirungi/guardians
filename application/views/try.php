@@ -79,7 +79,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="#body">
+					<a class="navbar-brand" href="<?php echo base_url('');?>">
 						<img src="<?php echo base_url();?>assets/img/logo-dark3.png" alt=""  style="height:40px; width:40px;">
 					</a>
 				</div>

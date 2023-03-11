@@ -19,17 +19,12 @@ class Admin extends CI_Model {
 		$query = $this->db->get_where('admins', $search);
         $user = $query->row_array();
         if($user){
-        $token = $_SESSION['__ci_last_regenerate'];
+        
 				$data = array(
-						'logged_in' => TRUE,
-						'user_id' => $user['id'],
-						'email' => $user['email'],
-                        'firstname' =>$user['first_name'],
-                        'firstname' =>$user['first_name'],
-                        'title' =>$user['title'],
+						
                         'portifolio'=>$user['portifolio'],
-						'access' => 1,
-						'token' => $token
+						
+						
 					);
                 $this->session->set_userdata($data);
 				$result['status'] = 'success';
@@ -56,7 +51,38 @@ function uploadPortifolio($data, $user_id){
  );
  
  $this->db->where('id', $user_id);
- $result = $this->db->update('admins', $portifolio);
+  $this->db->update('admins', $portifolio);
+  $this->db->where('id', $user_id);
+$query = $this->db->get('admins');
+$row = $query->row_array();
+if($row){
+    $token = $_SESSION['__ci_last_regenerate'];
+            $data = array(
+                    'logged_in' => TRUE,
+                    'user_id' => $row['id'],
+                    'email' => $row['email'],
+                    'firstname' =>$row['first_name'],
+                    'lastname' =>$row['last_name'],
+                    'title' =>$row['title'],
+                    'portifolio'=>$row['portifolio'],
+                    'access' => 1,
+                    'token' => $token
+                );
+$this->session->set_userdata($row);
+$result['status'] = 'success';
+$result['msg'] = 'Uploaded Successfully';
+
+}
+else {
+$result['msg']= '
+            <div class="uk-alert uk-alert-danger" data-uk-alert>
+                <a href="#" class="uk-alert-close uk-close"></a>
+                <h4 class="heading_b">Upload Failed</h4>
+                Email/Password is invalid. 
+            </div>';
+$result['error'] = 'Email/Password is invalid';
+}
+
  return $result;
     }
 

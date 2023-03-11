@@ -46,6 +46,7 @@ class Welcome extends CI_Controller {
 		$password = $this->input->post("password");
 		$login_status = $this->Admin->adminLogin();
 		$data['user'] = $this->session->userdata();
+		// die(var_dump($data['user']));
 		if(isset($login_status['status'])){
                 if($login_status['status'] == 'success') $this->load->view('admin',$data);
 
@@ -77,7 +78,12 @@ class Welcome extends CI_Controller {
         $result = $this->Admin->uploadPortifolio($data, $user_id);
         
     }
-	if($result == 1) $this->load->view('admin');
+	if($result == 1) {
+		$userdata['user'] = $this->session->userdata();
+	$this->load->view('admin',$userdata);
+	
+	}
+	
 }
  public function edit_user(){
 	$data = $this->session->userdata();
