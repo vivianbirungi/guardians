@@ -947,7 +947,7 @@ i.icon-border-v3.g-icon-hover-1 span {
   }
 
   .one-page-header.top-nav-collapse .dropdown-menu > li > a:hover {
-    color: #72c02c;
+    color: #228b22;
   }
 }
 @media (max-width: 991px) {
@@ -967,7 +967,7 @@ i.icon-border-v3.g-icon-hover-1 span {
 
   .one-page-header .dropdown-menu a:hover,
   .one-page-header.top-nav-collapse .dropdown-menu > li > a:hover {
-    color: #72c02c !important;
+    color: #228b22 !important;
   }
 }
 

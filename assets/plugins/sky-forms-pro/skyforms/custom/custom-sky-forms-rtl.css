@@ -111,7 +111,6 @@
   border-right: 1px solid #e5e5e5;
 }
 
-
 /**/
 /* normal state */
 /**/
@@ -126,11 +125,11 @@
   border-color: #bbb;
 }
 .sky-form .toggle i:before {
-  background-color: #999;  
+  background-color: #999;
 }
 
 .sky-form .button {
-  background: #72c02c;
+  background: #228b22;
 }
 
 /**/
@@ -155,7 +154,8 @@
 
 /*(remove Bootstrap 'radio, checkbox' margin-top)
 --------------------------------------------------*/
-.radio, .checkbox {
+.radio,
+.checkbox {
   margin-top: 0;
 }
 
@@ -181,7 +181,7 @@
 .sky-form .radio input + i:after {
   top: 5px;
   right: 5px;
-  background-color: #999;  
+  background-color: #999;
 }
 .sky-form .checkbox input + i:after {
   color: #999;
@@ -189,10 +189,10 @@
 .sky-form .radio input:checked + i,
 .sky-form .checkbox input:checked + i,
 .sky-form .toggle input:checked + i {
-  border-color: #999;  
+  border-color: #999;
 }
 .sky-form .rating input:checked ~ label {
-  color: #72c02c; 
+  color: #228b22;
 }
 
 /**/
@@ -246,7 +246,7 @@
 .sky-form .select select:focus,
 .sky-form .textarea textarea:focus {
   border-color: #bbb;
-  box-shadow: 0 0 2px #c9c9c9;  
+  box-shadow: 0 0 2px #c9c9c9;
 }
 
 .sky-form .radio input:focus + i,
@@ -273,7 +273,7 @@
 }
 .sky-form .rating input + label:hover,
 .sky-form .rating input + label:hover ~ label {
-  color: #72c02c;
+  color: #228b22;
 }
 
 .sky-form .icon-append,
@@ -309,7 +309,7 @@
   line-height: 27px;
 }
 
-.ui-datepicker-prev, 
+.ui-datepicker-prev,
 .ui-datepicker-next {
   font-size: 18px;
   line-height: 47px;
@@ -324,7 +324,7 @@
   border: 1px solid #bbb;
 }
 .ui-datepicker-calendar a:hover {
-  background: inherit;  
+  background: inherit;
   border: 1px solid #bbb;
 }
 

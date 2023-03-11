@@ -52,3 +52,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+// Map the URI 'about' to the About controller's index method
+
+
+
+// Map the URI 'blog' to the Blog controller's index method
+$route['admin'] = 'welcome/admin_login';
+
+// Map the URI 'blog/post/(:num)' to the Blog controller's view method,
+// passing the post ID as a parameter
+$route['portifolio/(:any)'] = 'welcome/tryPage/$1';

@@ -299,7 +299,7 @@ background-color:#ffffff;">
  <p>Welcome back, Login to continue</p>
 </div><br /><br />
  
-<form method="post" action="<?php echo base_url('Welcome/admin_login');?>">
+<form method="post" action="<?php echo base_url('admin');?>">
 <div class="form-group">
 <label for="exampleFormControlInput1">Email address</label>
 <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="email" style="border-radius:20px; background-color:#fff">

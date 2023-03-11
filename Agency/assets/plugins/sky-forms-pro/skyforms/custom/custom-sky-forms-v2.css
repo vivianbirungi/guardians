@@ -82,7 +82,7 @@
   color: #a49da6;
 }
 .sky-form .select select {
-	color: #cecacf;
+  color: #cecacf;
 }
 
 .sky-form .select select {
@@ -113,7 +113,6 @@
   border-left: 1px solid #e5e5e5;
 }
 
-
 /**/
 /* normal state */
 /**/
@@ -122,14 +121,14 @@
 }
 
 .sky-form .button {
-  background: #72c02c;
+  background: #228b22;
 }
 
 /**/
 /* toggles */
 /**/
 .sky-form .toggle {
-	font-weight: normal;
+  font-weight: normal;
 }
 
 .sky-form .toggle i {
@@ -147,7 +146,8 @@
 
 /*(remove Bootstrap 'radio, checkbox' margin-top)
 --------------------------------------------------*/
-.radio, .checkbox {
+.radio,
+.checkbox {
   margin-top: 0;
 }
 
@@ -184,7 +184,7 @@
   border-color: #ddd;
 }
 .sky-form .rating input:checked ~ label {
-  color: #72c02c;
+  color: #228b22;
 }
 
 /**/
@@ -238,7 +238,7 @@
 .sky-form .input input:focus,
 .sky-form .select select:focus,
 .sky-form .textarea textarea:focus {
- 	border-color: #ddd;
+  border-color: #ddd;
   box-shadow: none;
 }
 
@@ -255,7 +255,7 @@
 .sky-form .input:hover input,
 .sky-form .select:hover select,
 .sky-form .textarea:hover textarea {
-	border-color: #ddd;
+  border-color: #ddd;
 }
 
 .sky-form .radio:hover i,
@@ -266,7 +266,7 @@
 }
 .sky-form .rating input + label:hover,
 .sky-form .rating input + label:hover ~ label {
-  color: #72c02c;
+  color: #228b22;
 }
 
 .sky-form .icon-append,
