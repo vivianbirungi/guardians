@@ -23,6 +23,11 @@ class Admin extends CI_Model {
 				$data = array(
 						
                         'portifolio'=>$user['portifolio'],
+                        'user_id'=>$user['id'],
+                        'first_name'=>$user['first_name'],
+                        'last_name'=>$user['last_name'],
+                        'email'=>$user['email']
+
 						
 						
 					);
@@ -47,9 +52,13 @@ function uploadPortifolio($data, $user_id){
         // Update the database with the file path
      
   $portifolio = array(
-    'portifolio' => $data['upload_data']['file_name']
+    'portifolio' => $data['upload_data']['file_name'],
+    'description'=>$data['description'],
+    'creation_date' =>$data['creation_date'],
+    'title'=>$data['title'],
+    'author'=>$data['author']
  );
- 
+ //create a new data set
  $this->db->where('id', $user_id);
   $this->db->update('admins', $portifolio);
   $this->db->where('id', $user_id);
@@ -99,6 +108,14 @@ function editUser($user){
     );
     $this->db->where('id', user);
     $result = $this->db->update('admins',$data);
+}
+function uploadPreview($new_filename, $doc_Id){
+    $data = array(
+        'preview'=>$new_filename
+    );
+    $this->db->where('id', $doc_Id);
+    $result = $this->db->update('portifolio', $data);
+
 }
 }
 

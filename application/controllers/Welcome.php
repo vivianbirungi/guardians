@@ -62,12 +62,15 @@ class Welcome extends CI_Controller {
 	
 	public function upload_pdf()
 {
+	
     $user_id = $this->session->userdata('user_id');
 
 	if(!is_dir('./uploads/'.$user_id.'/'))mkdir('./uploads/'.$user_id.'/', 0777);
     $config['upload_path'] = './uploads/'.$user_id.'/';
     $config['allowed_types'] = 'pdf';
     $config['max_size'] = 1024000;
+
+	
     $this->load->library('upload', $config);
 
     if (!$this->upload->do_upload('pdf_file')) {
@@ -78,8 +81,9 @@ class Welcome extends CI_Controller {
         $result = $this->Admin->uploadPortifolio($data, $user_id);
         
     }
-	if($result == 1) {
-		$userdata['user'] = $this->session->userdata();
+	if($result) {
+    $this->session->set_flashdata('success','Uploaded Portifolio Successfully');
+	$userdata['user'] = $this->session->userdata();
 	$this->load->view('admin',$userdata);
 	
 	}
@@ -109,8 +113,38 @@ class Welcome extends CI_Controller {
     header('Accept-Ranges: bytes');
     readfile($pdf_file);
   }
+ public function create_apreview($filename, $id){
+	// Load the fpdf_parser library
+require_once('fpdf/fpdf.php');
+require_once('fpdf/fpdf_parser.php');
 
+// Open the original PDF file
+
+$parser = new \Smalot\PdfParser\Parser();
+$pdf = $parser->parseFile($filename, $docId);
+
+// Loop through the first 3 pages of the PDF file
+for($i = 1; $i <= 3; $i++) {
+    // Get the current page of the PDF file
+    $page = $pdf->getPages()[$i-1];
+
+    // Get the content of the current page
+    $content = $page->getText();
+
+    // Create a new PDF file and add the content of the current page to it
+    $new_filename = '/upload/previewto/'.$docId.'.pdf';
+    if ($i == 1) {
+        file_put_contents($new_filename, $content);
+    } else {
+        file_put_contents($new_filename, $content, FILE_APPEND);
+    }
 }
+   $result = $this->Admin->uploadPreview($new_filename);
+
+ }
+}
+
+
 
 	
 	// 	public function __construct(){

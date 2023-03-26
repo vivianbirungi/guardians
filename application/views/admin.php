@@ -180,11 +180,12 @@
 
 
     <div class="container">
+		<?php if($this->session->flashdata('success')) echo $this->session->flashdata('success');?>
     <!-- profile -->
 <div class="box-shadow profile card">
     <h2>Profile Info</h2>
 	
-    <form method="post">
+    <!-- <form method="post">
   <div class="form-group">
     <label for="exampleInputEmail1">Email address</label>
     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" style="border-radius:10px" name='email' value="<?php echo $user['email']; ?>">
@@ -204,17 +205,18 @@
     <input type="text" class="form-control rounded-2" id="title" placeholder="Title" style="border-radius:10px" name='title' value="<?php echo $user['title']; ?>">
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+</form> -->
     </div>
 <div class="box-shadow profile">
     <h1>Portifolio</h1>
 	<div class="row">
 		<div class="col-10">
-		<iframe src="<?php echo base_url('Welcome/view_pdf'); ?>" frameborder="0" style="width:100%; height:500px;"></iframe>
-
+			<?php var_dump($user);?>
+		<!-- <iframe src="<?php  echo base_url('Welcome/view_pdf'); ?>" frameborder="0" style="width:100%; height:500px;"></iframe> -->
+		<embed src="<?php echo base_url('uploads/'.$user['user_id'].'/'.$user['portifolio']);?>" #toolbar=0 width="100%" height="100%" />	
 		</div>
 		<div class="col-2">
-			<form action="<?php echo site_url('Welcome/upload_pdf'); ?>" method="post" enctype="multipart/form-data">
+			<form action="<?php echo base_url('Welcome/upload_pdf'); ?>" method="post" enctype="multipart/form-data">
 				<input type="file" name="pdf_file" value="<?php echo $user['portifolio']; ?>">
 				<input type="submit" value="Upload">
 			</form>
