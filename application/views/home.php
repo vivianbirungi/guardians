@@ -10,7 +10,7 @@
 	<link rel="shortcut icon" href="<?php echo base_url();?>assets/img/logo-dark3.png">
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&amp;subset=cyrillic,latin">
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900">
-	<link rel="stylesheet" href="<?php echo base_url();?>asset1/plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="<?php echo base_url();?>assets1/plugins/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="<?php echo base_url();?>asset1/css/app.css">
 	<link rel="stylesheet" href="<?php echo base_url();?>asset1/css/blocks.css">
 	<link rel="stylesheet" href="<?php echo base_url();?>asset1/css/plugins.css">
@@ -127,10 +127,12 @@
 <body id="body" data-spy="scroll" data-target=".one-page-header" class="demo-lightbox-gallery">
 	<main class="wrapper" style="position:relative">
 	<?php if ($this->session->flashdata('error')): ?>
-    <div class="error " style="position:absolute; top:100px; left:300px; width:150px; height:65px; padding:5px; color: background-color:'red'; z-index:1000">
+		<div class="error alert alert-error" style="position:absolute; top:100px; left:150px; border-radius:10px; padding:5px; color: background-color:'red'; width:80%; text-align:center; z-index:1000">
+
 	<?php $data = $this->session->flashdata('error');
 	 echo $data['errors']; ?></div>
 <?php endif; ?>
+
 		<!--=== Header ===-->
 		<nav class="one-page-header navbar navbar-default navbar-fixed-top one-page-nav-scrolling one-page-nav__fixed" data-role="navigation">
 			<div class="container">

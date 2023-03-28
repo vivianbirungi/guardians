@@ -57,8 +57,9 @@ $route['translate_uri_dashes'] = FALSE;
 
 
 // Map the URI 'blog' to the Blog controller's index method
+$route[''] = 'welcome';
 $route['admin'] = 'welcome/admin_login';
-
+$route['logout'] = 'welcome/logout';
 // Map the URI 'blog/post/(:num)' to the Blog controller's view method,
 // passing the post ID as a parameter
 $route['portifolio/(:any)'] = 'welcome/tryPage/$1';

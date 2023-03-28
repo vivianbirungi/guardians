@@ -39,8 +39,9 @@ class Admin extends CI_Model {
      else {
     $result['msg']= '
     <div class="alert alert-primary" role="alert">
-								<h4 class="heading_b">Login Failed</h4>
-								Email/Password is invalid. 
+								<span class="heading_b">Login Failed</span>
+								Email/Password is invalid.
+                                <a data-target="#adminLogin" data-toggle="modal" >Try Again</a> 
 							</div>';
 			$result['error'] = 'Email/Password is invalid';
 }

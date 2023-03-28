@@ -51,6 +51,7 @@ class Welcome extends CI_Controller {
 		
 
                 if($login_status['status'] == 'success'){
+					$this->session->set_flashdata('success','Logged In Successfully');
 					
 					$this->load->view('admin',$data);}
 
@@ -64,6 +65,11 @@ class Welcome extends CI_Controller {
 
 		
 
+	}
+	public function logout(){
+		//clear data and return to home
+		$this->session->sess_destroy();
+        redirect('');
 	}
 	
 	public function upload_pdf()
