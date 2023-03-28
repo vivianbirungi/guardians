@@ -46,15 +46,21 @@ class Welcome extends CI_Controller {
 		$password = $this->input->post("password");
 		$login_status = $this->Admin->adminLogin();
 		$data['user'] = $this->session->userdata();
-		// die(var_dump($data['user']));
-		if(isset($login_status['status'])){
-                if($login_status['status'] == 'success') $this->load->view('admin',$data);
+		// die(var_dump($login_status));
+
+		
+
+                if($login_status['status'] == 'success'){
+					
+					$this->load->view('admin',$data);}
 
                 else
 				{
 					$data['errors'] = $login_status['msg'];
+					$this->session->set_flashdata('error', $data);
+					redirect('welcome');
 				}
-			}
+			
 
 		
 
@@ -65,8 +71,8 @@ class Welcome extends CI_Controller {
 	
     $user_id = $this->session->userdata('user_id');
 
-	if(!is_dir('./uploads/'.$user_id.'/'))mkdir('./uploads/'.$user_id.'/', 0777);
-    $config['upload_path'] = './uploads/'.$user_id.'/';
+	if(!is_dir('./uploads/portifolio/'))mkdir('./uploads/portifolio/', 0777);
+    $config['upload_path'] = './uploads/portifolio/';
     $config['allowed_types'] = 'pdf';
     $config['max_size'] = 1024000;
 
@@ -85,6 +91,7 @@ class Welcome extends CI_Controller {
     $this->session->set_flashdata('success','Uploaded Portifolio Successfully');
 	$userdata['user'] = $this->session->userdata();
 	$this->load->view('admin',$userdata);
+	// $this->create_apreview($data['upload_data']['full_path'], $result);
 	
 	}
 	
@@ -115,31 +122,44 @@ class Welcome extends CI_Controller {
   }
  public function create_apreview($filename, $id){
 	// Load the fpdf_parser library
-require_once('fpdf/fpdf.php');
-require_once('fpdf/fpdf_parser.php');
+// require_once('C:\wamp64\www\guardians\application\libraries\fpdf.php');
+// // require_once('libraries/fpdf_parser.php');
 
-// Open the original PDF file
+// // Open the original PDF file
 
-$parser = new \Smalot\PdfParser\Parser();
-$pdf = $parser->parseFile($filename, $docId);
+// $parser = new \Smalot\PdfParser\Parser();
+// $pdf = $parser->parseFile($filename, $docId);
 
-// Loop through the first 3 pages of the PDF file
-for($i = 1; $i <= 3; $i++) {
-    // Get the current page of the PDF file
-    $page = $pdf->getPages()[$i-1];
+// // Loop through the first 3 pages of the PDF file
+// for($i = 1; $i <= 3; $i++) {
+//     // Get the current page of the PDF file
+//     $page = $pdf->getPages()[$i-1];
 
-    // Get the content of the current page
-    $content = $page->getText();
+//     // Get the content of the current page
+//     $content = $page->getText();
 
-    // Create a new PDF file and add the content of the current page to it
-    $new_filename = '/upload/previewto/'.$docId.'.pdf';
-    if ($i == 1) {
-        file_put_contents($new_filename, $content);
-    } else {
-        file_put_contents($new_filename, $content, FILE_APPEND);
-    }
-}
-   $result = $this->Admin->uploadPreview($new_filename);
+//     // Create a new PDF file and add the content of the current page to it
+//     $new_filename = '/upload/previewto/'.$docId.'.pdf';
+//     if ($i == 1) {
+//         file_put_contents($new_filename, $content);
+//     } else {
+//         file_put_contents($new_filename, $content, FILE_APPEND);
+//     }
+// }
+// die(var_dump($filename));
+
+$this->load->library('pdf');
+
+    $pdf_file = 'path/to/uploaded/pdf/file.pdf';
+
+    $this->pdf->setSourceFile($pdf_file);
+
+    $page = $this->pdf->getPage(1);
+
+    $image = $page->render('PNG', 300, 300);
+
+    header('Content-Type: image/png');
+   $result = $this->Admin->uploadPreview($new_filename, $docId);
 
  }
 }

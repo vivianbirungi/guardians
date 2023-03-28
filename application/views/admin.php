@@ -183,7 +183,7 @@
 		<?php if($this->session->flashdata('success')) echo $this->session->flashdata('success');?>
     <!-- profile -->
 <div class="box-shadow profile card">
-    <h2>Profile Info</h2>
+    <!-- <h2>Profile Info</h2> -->
 	
     <!-- <form method="post">
   <div class="form-group">
@@ -207,28 +207,58 @@
   <button type="submit" class="btn btn-primary">Submit</button>
 </form> -->
     </div>
-<div class="box-shadow profile">
+<div class=" profile">
     <h1>Portifolio</h1>
-	<div class="row">
-		<div class="col-10">
-			<?php var_dump($user);?>
-		<!-- <iframe src="<?php  echo base_url('Welcome/view_pdf'); ?>" frameborder="0" style="width:100%; height:500px;"></iframe> -->
-		<embed src="<?php echo base_url('uploads/'.$user['user_id'].'/'.$user['portifolio']);?>" #toolbar=0 width="100%" height="100%" />	
+	<form action="<?php echo base_url('Welcome/upload_pdf'); ?>" method="post" enctype="multipart/form-data">
+	    <div class="row" style="display:flex; flex-direction:row">
+		<div class="box-shadow" style="width:50%; margin-right:30px; padding:20px">
+			<h4 style="font-weight:bold">Upload File</h4>
+			<p>Upload a portifolio</p>
+			<input type="file" name="pdf_file" value="<?php echo $user['portifolio']; ?>">
+		
 		</div>
-		<div class="col-2">
-			<form action="<?php echo base_url('Welcome/upload_pdf'); ?>" method="post" enctype="multipart/form-data">
-				<input type="file" name="pdf_file" value="<?php echo $user['portifolio']; ?>">
-				<input type="submit" value="Upload">
-			</form>
-</div>
+		<div class="" style="width:45%">
+		<div class="box-shadow" style="width:100%; padding:10px">
+		<p>Capture Data on the Upload</p>
+
+		<div class="form-group">
+    <label for="title">Title</label>
+    <input type="text" class="form-control" id="title"  placeholder="Enter title" style="border-radius:10px" name='title'>
+    
+  </div>
+  <div class="form-group">
+    <label for="author">Author</label>
+    <input type="text" class="form-control" id="author" placeholder="First Name" name='author' style="border-radius:10px"  >
+  </div>
+  
+  <div class="form-group">
+    <label for="description">Description</label>
+	<textarea class="form-control" name="description" id="description" rows="3" style="border-radius:10px"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="date">Creation Date</label>
+	<input type="date" id="date" class="form-control rounded-2"  style="border-radius:10px" name='creation_date' >
+  </div>
+        </div>
+
+		</div>
+		
+		</div>
+		<div style="width:100%; display:flex; justify-content:center">
+		<button type="submit" class="btn btn-primary  rounded" style="padding:10px; margin-top:30px; border:1px solid #000; border-radius:20px; width:30%" >Upload</button>
+
+		</div>
+	</form>	
 	
-</div>
+
 </div>
 
     </div>
     <!--/container-->
     <!--=== End Content Part ===-->
-
+	<?php var_dump($user);?> 
+	<!-- <iframe src="<?php  echo base_url('Welcome/view_pdf'); ?>" frameborder="0" style="width:100%; height:500px;"></iframe> -->
+	<!-- <embed src="<?php echo base_url('uploads/'.$user['user_id'].'/'.$user['portifolio']);?>" #toolbar=0 width="100%" height="100%" />	 -->
      <!--=== Footer Version 1 ===-->
     
 

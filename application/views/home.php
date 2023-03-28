@@ -125,8 +125,12 @@
 -->
 
 <body id="body" data-spy="scroll" data-target=".one-page-header" class="demo-lightbox-gallery">
-	<main class="wrapper">
-
+	<main class="wrapper" style="position:relative">
+	<?php if ($this->session->flashdata('error')): ?>
+    <div class="error " style="position:absolute; top:100px; left:300px; width:150px; height:65px; padding:5px; color: background-color:'red'; z-index:1000">
+	<?php $data = $this->session->flashdata('error');
+	 echo $data['errors']; ?></div>
+<?php endif; ?>
 		<!--=== Header ===-->
 		<nav class="one-page-header navbar navbar-default navbar-fixed-top one-page-nav-scrolling one-page-nav__fixed" data-role="navigation">
 			<div class="container">
@@ -201,7 +205,7 @@
 			<!-- /.container -->
 		</nav>
 		<!--=== End Header ===-->
-
+		
 		<!-- Promo Block -->
 	<div class="promo" id="rev_slider_104_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="scroll-effect76" style="background-color:#111111;padding:0px; height:700px; width:100%">
 		<div id="my-pics" id="rev_slider_104_1"  class="carousel slide rev_slider_wrapper fullscreen-container" data-ride="carousel" data-version="5.0.7" style="height:700px">
@@ -1078,6 +1082,12 @@
         
         height:500px;
         width:400px;">
+		
+
+
+
+
+
 	<div class="row" style="height:90px;
         
 		text-align:center;
